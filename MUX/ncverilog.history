@@ -1,0 +1,13 @@
+s1(30Sep2019:16:13:27):  ncverilog +access+rwc MUX_tb.v MUX.v 
+s2(30Sep2019:16:32:50):  ncverilog +access+rwc MUX_tb.v MUX.v 
+s3(30Sep2019:16:34:03):  ncverilog +access+rwc MUX_tb.v 
+s4(30Sep2019:16:34:45):  ncverilog +rwc MUX_tb.v 
+s5(30Sep2019:16:35:06):  ncverilog +access+rwc MUX_tb.v 
+s6(30Sep2019:16:35:22):  ncverilog +access+rwc MUX_tb.v 
+s7(30Sep2019:16:35:34):  ncverilog +access+rwc MUX_tb.v MUX.v 
+s8(30Sep2019:16:36:19):  ncverilog +access+rwc MUX_tb.v MUX.v 
+s9(30Sep2019:16:36:46):  ncverilog +access+rwc MUX_tb.v MUX.v 
+s10(30Sep2019:16:37:51):  ncverilog +access+rwc MUX_tb.v MUX.v 
+s11(30Sep2019:16:38:10):  ncverilog +access+rwc MUX_tb.v 
+s12(30Sep2019:16:45:21):  ncverilog +access+rwc MUX_tb.v 
+s13(30Sep2019:16:46:23):  ncverilog +access+rwc MUX_tb.v 

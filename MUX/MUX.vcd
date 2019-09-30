@@ -1,0 +1,70 @@
+$date
+    Sep 30, 2019  16:46:23
+$end
+$version
+    TOOL:	ncsim	15.20-s039
+$end
+$timescale
+    10 ps
+$end
+
+$scope module MUX_tb $end
+$var reg       1 !    A  $end
+$var reg       1 "    B  $end
+$var reg       1 #    sel  $end
+$var wire      1 $    C  $end
+$var integer  32 %    i  $end
+$var wire      1 &    j  $end
+
+$scope module MUX0 $end
+$var wire      1 '    Din1  $end
+$var wire      1 (    Din2  $end
+$var wire      1 )    Sel  $end
+$var wire      1 $    Dout  $end
+$var wire      1 *    Sel_  $end
+$var wire      1 +    w1  $end
+$var wire      1 ,    w2  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+b0 %
+0&
+0'
+0(
+0)
+1*
+0+
+0,
+$end
+#1000
+1"
+b1 %
+1(
+1&
+1,
+1$
+#2000
+1#
+b10 %
+1)
+0&
+0*
+0,
+0$
+#3000
+1!
+b11 %
+1'
+1&
+1+
+1$
+#4000
+b100 %
+#5000

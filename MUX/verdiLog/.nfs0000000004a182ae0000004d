@@ -1,0 +1,24 @@
+debImport "/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/MUX/MUX.v" -path \
+          {/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/MUX}
+schCreateWindow -delim "." -win $_nSchema1 -scope "MUX"
+schSelect -win $_nSchema2 -inst "and\$1"
+schSelect -win $_nSchema2 -inst "and\$1"
+schPushViewIn -win $_nSchema2
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_2
+schSelect -win $_nSchema2 -port "Din1"
+schSelect -win $_nSchema2 -port "Din1"
+schPopViewUp -win $_nSchema2
+schSelect -win $_nSchema2 -signal "Din1"
+schFocusConnection -win $_nSchema2
+schSelect -win $_nSchema2 -signal "Sel"
+schDeselectAll -win $_nSchema2
+schSetOptions -win $_nSchema2 -portName on
+schSetOptions -win $_nSchema2 -pinName on
+schSetOptions -win $_nSchema2 -instName on
+schSetOptions -win $_nSchema2 -localNetName on
+wvCreateWindow
+verdiDockWidgetSetCurTab -dock widgetDock_MTB_SOURCE_TAB_1
+verdiDockWidgetSetCurTab -dock windowDock_nSchema_2
+wvCloseWindow -win $_nWave3
+schSelect -win $_nSchema2 -signal "Din1"
+schDeselectAll -win $_nSchema2
