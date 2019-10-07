@@ -33,5 +33,26 @@ fulladder f0 (
 .sum(),
 .c_out()
 );
+	fulladder f0 (
+.a(),
+.b(),
+.c(),
+.sum(),
+.c_out()
+);
+	fulladder f0 (
+.a(),
+.b(),
+.c(),
+.sum(),
+.c_out()
+);
+	fulladder f0 (
+.a(),
+.b(),
+.c(),
+.sum(),
+.c_out()
+);
 
 endmodule
