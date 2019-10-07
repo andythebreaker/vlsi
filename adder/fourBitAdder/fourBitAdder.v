@@ -53,7 +53,7 @@ fulladder f0 (
 .b(b[3]),
 .c_in(f2Cout),
 .sum(sum[3]),
-.c_out(C_out)
+.c_out(c_out)
 );
 
 endmodule

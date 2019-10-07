@@ -1,8 +1,4 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 07, 2019 at 23:07:09 CST
-ncverilog
-	+access+rwc
-	test_bench_4bit.v
 Loading snapshot worklib.test_bench_4bit:v .................... Done
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
@@ -268,4 +264,3 @@ OK!
 Simulation complete via $finish(1) at time 1290 NS + 0
 ./test_bench_4bit.v:43 #5 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 07, 2019 at 23:07:09 CST  (total: 00:00:00)

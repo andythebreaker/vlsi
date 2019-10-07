@@ -1,63 +1,57 @@
-`include "fulladder.v"
+`include "fourBitAdder.v"
 `timescale 1 ns / 1 ps
 module test_bench_4bit;
-reg a;
-reg b;
-reg c;
-wire s;
-wire co;
-fulladder FA (a,b,c,s,co);
+reg [3:0] a,b;//in
+reg c_in;//in
+wire [3:0] sum;//out
+wire c_out;//out
+fourBitAdder ad4 (c_in,a,b,sum,c_out);
 initial
-begin
+begin : first_init
 $display("=========This is a test bench of 4 bit ADDER=========");
-$monitor($time," || a= %b | b= %b | c= %b | s= %b | os= %b",a,b,c,s,co);
-a=1'b0;
-b=1'b0;
-c=1'b0;
-#5 a=1'b0;
-b=1'b0;
-c=1'b1;
-  #5 a=1'b0;
-b=1'b1;
-c=1'b0;
-  #5 a=1'b1;
-b=1'b0;
-c=1'b0;
-  #5 a=1'b0;
-b=1'b1;
-c=1'b1;
-  #5 a=1'b1;
-b=1'b1;
-c=1'b0;
-  #5 a=1'b1;
-b=1'b0;
-c=1'b1;
-  #5 a=1'b1;
-b=1'b1;
-c=1'b1;
-#5 $finish;
-end
-//====================chart========================
-//for all abc -> output S/C
-//000->0/0
-//001->1/0
-//011->0/1
-//111->1/1
-//a|b|c/S-c
-//000/0-0
-//001/1-0
-//010/1-0
-//100/1-0
-//011/0-1
-//110/0-1
-//101/0-1
-//111/1-1
-//============all we need to test==================
-//always #50 begin
-//if
+$monitor($time," || a= %d | b= %d | c= %b | s= %d | OC= %b | (ERR:%d)",a,b,c_in,sum,c_out,error_code);
+a=4'd0;
+b=4'd0;
+c_in=1'b0;
+end// : first_init
+integer error_code=1;
+
 initial
-begin
-$dumpfile("fulladder.vcd");
+begin : main_test
+		integer i;
+	for (i=0;i<16;i=i+1)
+	begin : for_loop_for_a_big
+	integer k;
+	for (k=0;k<16;k=k+1)
+	begin : F_loop_b_small
+
+	#5 b=b+4'd1;
+	if ((sum+c_out*16)==(i+k))
+	error_code=error_code*1;
+	else
+	error_code=error_code*0;
+
+	end// : F_loop_b_small
+	
+	a=a+4'd1;
+
+	end// : for_loop_for_a_big
+#5 if(error_code==0)
+$display("ERROR!");
+else
+$display("OK!");
+#5 $finish;
+end// : main_test
+
+//=================================================
+//NOTAM:
+//if u name a begin-end block with ":" mark behind "begin"
+//do not put the same stuff behind "end" -> will cuz ERROR
+//=================================================
+
+initial
+begin : out_wave
+$dumpfile("fourBitAdder.vcd");
 $dumpvars;
-end
+end// : out_wave
 endmodule
