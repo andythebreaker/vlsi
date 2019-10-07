@@ -1,0 +1,8 @@
+s1(04Oct2019:05:20:03):  ncverilog +access+rwc fulladder.v 
+s2(04Oct2019:05:26:19):  ncverilog +access+rwc fulladder.v test_bench.v 
+s3(04Oct2019:05:27:06):  ncverilog +access+rwc fulladder.v test_bench.v 
+s4(04Oct2019:05:33:02):  ncverilog +access+rwc fulladder.v test_bench.v 
+s5(04Oct2019:05:34:01):  ncverilog +access+rwc fulladder.v test_bench.v 
+s6(04Oct2019:05:34:38):  ncverilog +access+rwc fulladder.v test_bench.v 
+s7(07Oct2019:20:12:01):  ncverilog +access+rwc test_bench.v fulladder.v 
+s8(07Oct2019:20:12:49):  ncverilog +access+rwc test_bench.v fulladder.v 
