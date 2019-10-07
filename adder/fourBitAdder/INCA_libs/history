@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(07Oct2019:21:43:18):( ncverilog +access+rwc fourBitAdder.v )
+s2::(07Oct2019:21:44:03):( ncverilog +access+rwc fourBitAdder.v )

@@ -1,0 +1,27 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Oct 07, 2019 at 21:44:03 CST
+ncverilog
+	+access+rwc
+	fourBitAdder.v
+file: fourBitAdder.v
+	module worklib.fourBitAdder:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Primitives:              5       2
+		Scalar wires:            5       -
+		Vectored wires:          3       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.fulladder:v
+Loading snapshot worklib.fulladder:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 07, 2019 at 21:44:05 CST  (total: 00:00:02)
