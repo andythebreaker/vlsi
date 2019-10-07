@@ -6,7 +6,6 @@
 ./INCA_libs/irun.lnx86.15.20.nc
 -RUNMODE
 test_bench.v
-fulladder.v
 -CDSLIB
 ./INCA_libs/irun.lnx86.15.20.nc/cdsrun.lib
 -HDLVAR

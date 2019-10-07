@@ -1,34 +1,45 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 07, 2019 at 20:12:49 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 07, 2019 at 21:04:46 CST
 ncverilog
 	+access+rwc
 	test_bench.v
-	fulladder.v
+Recompiling... reason: file './fulladder.v' is newer than expected.
+	expected: Fri Oct  4 05:19:02 2019
+	actual:   Mon Oct  7 21:04:41 2019
 file: test_bench.v
-	module worklib.test_bench:v
+	module worklib.fulladder:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.test_bench:v <0x21d9c798>
-			streams:   5, words:  4595
+		worklib.test_bench:v <0x23b9e6ed>
+			streams:   5, words:  7939
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		             Instances  Unique
-		Modules:             2       2
-		Primitives:          5       2
-		Registers:           3       3
-		Scalar wires:        3       -
-		Initial blocks:      1       1
-		Pseudo assignments:  3       3
+		                 Instances  Unique
+		Modules:                 2       2
+		Primitives:              5       2
+		Registers:               3       3
+		Scalar wires:            3       -
+		Initial blocks:          1       1
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.test_bench:v
 Loading snapshot worklib.test_bench:v .................... Done
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
 =========This is a test bench of FULL ADDER=========
                    0 || a= 0 | b= 0 | c= 0 | s= 0 | os= 0
-ncsim: *W,RNQUIE: Simulation is complete.
+                   5 || a= 0 | b= 0 | c= 1 | s= 1 | os= 0
+                  10 || a= 0 | b= 1 | c= 0 | s= 1 | os= 0
+                  15 || a= 1 | b= 0 | c= 0 | s= 1 | os= 0
+                  20 || a= 0 | b= 1 | c= 1 | s= 0 | os= 1
+                  25 || a= 1 | b= 1 | c= 0 | s= 0 | os= 1
+                  30 || a= 1 | b= 0 | c= 1 | s= 0 | os= 1
+                  35 || a= 1 | b= 1 | c= 1 | s= 1 | os= 1
+Simulation complete via $finish(1) at time 40 NS + 0
+./test_bench.v:38 #5 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 07, 2019 at 20:12:52 CST  (total: 00:00:03)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 07, 2019 at 21:04:48 CST  (total: 00:00:02)

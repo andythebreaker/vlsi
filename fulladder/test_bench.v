@@ -1,4 +1,4 @@
-`include "fulladder"
+`include "fulladder.v"
 `timescale 1 ns / 1 ps
 module test_bench;
 reg a;
@@ -35,6 +35,7 @@ c=1'b1;
   #5 a=1'b1;
 b=1'b1;
 c=1'b1;
+#5 $finish;
 end
 //====================chart========================
 //for all abc -> output S/C
