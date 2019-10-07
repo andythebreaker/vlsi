@@ -1,6 +1,6 @@
 `include "fulladder.v"
 `timescale 1 ns / 1 ps
-module test_bench;
+module test_bench_4bit;
 reg a;
 reg b;
 reg c;
@@ -9,7 +9,7 @@ wire co;
 fulladder FA (a,b,c,s,co);
 initial
 begin
-$display("=========This is a test bench of FULL ADDER=========");
+$display("=========This is a test bench of 4 bit ADDER=========");
 $monitor($time," || a= %b | b= %b | c= %b | s= %b | os= %b",a,b,c,s,co);
 a=1'b0;
 b=1'b0;

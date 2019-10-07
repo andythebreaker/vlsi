@@ -1,2 +1,4 @@
 s1(07Oct2019:21:43:18):  ncverilog +access+rwc fourBitAdder.v 
 s2(07Oct2019:21:44:03):  ncverilog +access+rwc fourBitAdder.v 
+s3(07Oct2019:22:05:24):  ncverilog +access+rwc fourBitAdder.v 
+s4(07Oct2019:22:07:08):  ncverilog +access+rwc fourBitAdder.v 
