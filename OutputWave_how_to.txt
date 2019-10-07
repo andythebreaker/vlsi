@@ -1,0 +1,5 @@
+ initial begin
+    //generate waveform
+	$dumpfile("MUX.vcd");
+	$dumpvars;
+  end

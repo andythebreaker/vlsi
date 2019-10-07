@@ -1,20 +1,20 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 07, 2019 at 21:04:46 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 07, 2019 at 21:28:02 CST
 ncverilog
 	+access+rwc
 	test_bench.v
-Recompiling... reason: file './fulladder.v' is newer than expected.
-	expected: Fri Oct  4 05:19:02 2019
-	actual:   Mon Oct  7 21:04:41 2019
+Recompiling... reason: file './test_bench.v' is newer than expected.
+	expected: Mon Oct  7 21:03:39 2019
+	actual:   Mon Oct  7 21:27:50 2019
 file: test_bench.v
-	module worklib.fulladder:v
+	module worklib.test_bench:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.test_bench:v <0x23b9e6ed>
-			streams:   5, words:  7939
+		worklib.test_bench:v <0x5fde2c69>
+			streams:   6, words:  8429
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -23,7 +23,7 @@ file: test_bench.v
 		Primitives:              5       2
 		Registers:               3       3
 		Scalar wires:            3       -
-		Initial blocks:          1       1
+		Initial blocks:          2       2
 		Pseudo assignments:      3       3
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.test_bench:v
@@ -42,4 +42,4 @@ ncsim> run
 Simulation complete via $finish(1) at time 40 NS + 0
 ./test_bench.v:38 #5 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 07, 2019 at 21:04:48 CST  (total: 00:00:02)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 07, 2019 at 21:28:03 CST  (total: 00:00:01)

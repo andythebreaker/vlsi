@@ -55,4 +55,9 @@ end
 //============all we need to test==================
 //always #50 begin
 //if
+initial
+begin
+$dumpfile("fulladder.vcd");
+$dumpvars;
+end
 endmodule
