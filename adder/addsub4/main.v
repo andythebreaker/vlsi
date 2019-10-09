@@ -1,3 +1,7 @@
+`include "adder4.v"
+`include "fulladder.v"
+`include "xor4.v"
+`include "addSub4.v"
 module main;
 reg signed [3:0] a;
 reg signed [3:0] b;
@@ -23,6 +27,6 @@ always #100 begin
   b=b+1;
 end
 
-initial #2000 $finish;
+initial #2050 $finish;
 
 endmodule
