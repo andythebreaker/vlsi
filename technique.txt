@@ -1,0 +1,7 @@
+a [N:0] xor 1[V:0]
+will make fact such as::
+if a = 0101
+through this process
+will get ans = 1010
+
+it is a way to do up_side_down (opposite)
