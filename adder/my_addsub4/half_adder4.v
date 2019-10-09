@@ -1,4 +1,4 @@
-module adder4(input signed [3:0] a, input signed [3:0] b, input c_in, 
+module half_adder4(input signed [3:0] a, input signed [3:0] b, input c_in, 
               output signed [3:0] sum, output c_out);
 wire [3:0] c;
 

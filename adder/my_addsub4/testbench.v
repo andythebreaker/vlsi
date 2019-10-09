@@ -2,17 +2,19 @@
 `include "fulladder.v"
 `include "xor4.v"
 `include "addSub4.v"
-module main;
+module testbench;
 reg signed [3:0] a;
 reg signed [3:0] b;
 wire signed [3:0] sum;
 reg op;
+reg c_in;
 wire c_out;
 
-addSub4 DUT (op, a, b, sum, c_out);
+addSub4 DUT (op, a, b,c_in, sum, c_out);
 
 initial
 begin
+c_in=1'b0;
   a = 4'b0101;
   b = 4'b0000;
   op = 1'b0;

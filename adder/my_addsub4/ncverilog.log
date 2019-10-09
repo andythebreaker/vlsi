@@ -1,84 +1,34 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 09, 2019 at 14:40:45 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 09, 2019 at 15:21:02 CST
 ncverilog
 	+access+rwc
-	main.v
-file: main.v
+	testbench.v
+file: testbench.v
 	module worklib.adder4:v
 		errors: 0, warnings: 0
 	module worklib.fulladder:v
 		errors: 0, warnings: 0
 	module worklib.xor4:v
 		errors: 0, warnings: 0
+adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
+                        |
+ncvlog: *E,NONOWD (addSub4.v,10|24): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
+(`include file: addSub4.v line 12, file: testbench.v line 4)
+adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
+                          |
+ncvlog: *E,NONOWD (addSub4.v,10|26): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
+(`include file: addSub4.v line 12, file: testbench.v line 4)
+adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
+                            |
+ncvlog: *E,NONOWD (addSub4.v,10|28): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
+(`include file: addSub4.v line 12, file: testbench.v line 4)
+adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
+                              |
+ncvlog: *E,NONOWD (addSub4.v,10|30): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
+(`include file: addSub4.v line 12, file: testbench.v line 4)
 	module worklib.addSub4:v
+		errors: 4, warnings: 0
+	module worklib.testbench:v
 		errors: 0, warnings: 0
-	module worklib.main:v
-		errors: 0, warnings: 0
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.addSub4:v <0x73dffbe0>
-			streams:   0, words:     0
-		worklib.main:v <0x5267461b>
-			streams:   8, words:  5278
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		              Instances  Unique
-		Modules:              8       5
-		Primitives:          24       2
-		Registers:            3       3
-		Scalar wires:         2       -
-		Expanded wires:       8       2
-		Always blocks:        2       2
-		Initial blocks:       2       2
-		Pseudo assignments:   3       3
-	Writing initial simulation snapshot: worklib.main:v
-Loading snapshot worklib.main:v .................... Done
-ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
-ncsim> run
-        50ns monitor: op=1 a=  5 b=  0 sum=  5
-       100ns monitor: op=0 a=  5 b=  1 sum=  6
-       150ns monitor: op=1 a=  5 b=  1 sum=  4
-       200ns monitor: op=0 a=  5 b=  2 sum=  7
-       250ns monitor: op=1 a=  5 b=  2 sum=  3
-       300ns monitor: op=0 a=  5 b=  3 sum= -8
-       350ns monitor: op=1 a=  5 b=  3 sum=  2
-       400ns monitor: op=0 a=  5 b=  4 sum= -7
-       450ns monitor: op=1 a=  5 b=  4 sum=  1
-       500ns monitor: op=0 a=  5 b=  5 sum= -6
-       550ns monitor: op=1 a=  5 b=  5 sum=  0
-       600ns monitor: op=0 a=  5 b=  6 sum= -5
-       650ns monitor: op=1 a=  5 b=  6 sum= -1
-       700ns monitor: op=0 a=  5 b=  7 sum= -4
-       750ns monitor: op=1 a=  5 b=  7 sum= -2
-       800ns monitor: op=0 a=  5 b= -8 sum= -3
-       850ns monitor: op=1 a=  5 b= -8 sum= -3
-       900ns monitor: op=0 a=  5 b= -7 sum= -2
-       950ns monitor: op=1 a=  5 b= -7 sum= -4
-      1000ns monitor: op=0 a=  5 b= -6 sum= -1
-      1050ns monitor: op=1 a=  5 b= -6 sum= -5
-      1100ns monitor: op=0 a=  5 b= -5 sum=  0
-      1150ns monitor: op=1 a=  5 b= -5 sum= -6
-      1200ns monitor: op=0 a=  5 b= -4 sum=  1
-      1250ns monitor: op=1 a=  5 b= -4 sum= -7
-      1300ns monitor: op=0 a=  5 b= -3 sum=  2
-      1350ns monitor: op=1 a=  5 b= -3 sum= -8
-      1400ns monitor: op=0 a=  5 b= -2 sum=  3
-      1450ns monitor: op=1 a=  5 b= -2 sum=  7
-      1500ns monitor: op=0 a=  5 b= -1 sum=  4
-      1550ns monitor: op=1 a=  5 b= -1 sum=  6
-      1600ns monitor: op=0 a=  5 b=  0 sum=  5
-      1650ns monitor: op=1 a=  5 b=  0 sum=  5
-      1700ns monitor: op=0 a=  5 b=  1 sum=  6
-      1750ns monitor: op=1 a=  5 b=  1 sum=  4
-      1800ns monitor: op=0 a=  5 b=  2 sum=  7
-      1850ns monitor: op=1 a=  5 b=  2 sum=  3
-      1900ns monitor: op=0 a=  5 b=  3 sum= -8
-      1950ns monitor: op=1 a=  5 b=  3 sum=  2
-      2000ns monitor: op=0 a=  5 b=  4 sum= -7
-Simulation complete via $finish(1) at time 2050 NS + 0
-./main.v:30 initial #2050 $finish;
-ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 09, 2019 at 14:40:46 CST  (total: 00:00:01)
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 09, 2019 at 15:21:02 CST  (total: 00:00:00)

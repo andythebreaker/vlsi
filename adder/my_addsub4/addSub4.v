@@ -7,7 +7,6 @@ wire [3:0] Cout_withoutP;
 
 xor4 x1(b, {op,op,op,op}, contrast);
 adder4 a1(a, contrast, c_in, sum_withoutP, Cout_withoutP);
-
-adder4 a2(sum_withoutP,
+adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
 
 endmodule

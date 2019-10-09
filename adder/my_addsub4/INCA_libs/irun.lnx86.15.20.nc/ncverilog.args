@@ -3,4 +3,4 @@
 // Do not modify this file
 //
 +access+rwc
-main.v
+testbench.v
