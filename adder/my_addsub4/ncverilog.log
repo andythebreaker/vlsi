@@ -1,33 +1,38 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 09, 2019 at 14:12:42 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 09, 2019 at 14:40:45 CST
 ncverilog
 	+access+rwc
 	main.v
-Recompiling... reason: file './main.v' is newer than expected.
-	expected: Wed Oct  9 14:11:24 2019
-	actual:   Wed Oct  9 14:12:36 2019
 file: main.v
+	module worklib.adder4:v
+		errors: 0, warnings: 0
+	module worklib.fulladder:v
+		errors: 0, warnings: 0
+	module worklib.xor4:v
+		errors: 0, warnings: 0
+	module worklib.addSub4:v
+		errors: 0, warnings: 0
 	module worklib.main:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.main:v <0x0cd61c04>
-			streams:   8, words:  5182
+		worklib.addSub4:v <0x73dffbe0>
+			streams:   0, words:     0
+		worklib.main:v <0x5267461b>
+			streams:   8, words:  5278
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		              Instances  Unique
 		Modules:              8       5
-		Primitives:          20       2
+		Primitives:          24       2
 		Registers:            3       3
 		Scalar wires:         2       -
 		Expanded wires:       8       2
-		Vectored wires:       1       -
 		Always blocks:        2       2
 		Initial blocks:       2       2
-		Cont. assignments:    1       1
 		Pseudo assignments:   3       3
 	Writing initial simulation snapshot: worklib.main:v
 Loading snapshot worklib.main:v .................... Done
@@ -76,4 +81,4 @@ ncsim> run
 Simulation complete via $finish(1) at time 2050 NS + 0
 ./main.v:30 initial #2050 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 09, 2019 at 14:12:43 CST  (total: 00:00:01)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 09, 2019 at 14:40:46 CST  (total: 00:00:01)

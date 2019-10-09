@@ -5,3 +5,4 @@
 s1::(09Oct2019:14:09:26):( ncverilog +access+rwc main.v )
 s2::(09Oct2019:14:11:30):( ncverilog +access+rwc main.v )
 s3::(09Oct2019:14:12:42):( ncverilog +access+rwc main.v )
+s4::(09Oct2019:14:40:25):( ncverilog +access+rwc main.v )
