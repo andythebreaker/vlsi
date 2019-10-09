@@ -3,10 +3,11 @@ module addSub4(input op, input signed [3:0] a, input signed [3:0] b,input c_in,
 
 wire [3:0] contrast;
 wire [3:0] sum_withoutP;
-wire [3:0] Cout_withoutP;
-
+wire  Cout_withoutP;
+wire co;
 xor4 x1(b, {op,op,op,op}, contrast);
 adder4 a1(a, contrast, c_in, sum_withoutP, Cout_withoutP);
-adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
+half_adder4 ha1(sum_withoutP,op,sum,co);
+or(c_out,co,Cout_withoutP);
 
 endmodule

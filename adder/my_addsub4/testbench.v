@@ -2,6 +2,8 @@
 `include "fulladder.v"
 `include "xor4.v"
 `include "addSub4.v"
+`include "half_adder.v"
+`include "half_adder4.v"
 module testbench;
 reg signed [3:0] a;
 reg signed [3:0] b;
@@ -22,7 +24,7 @@ end
 
 always #50 begin
   op=op+1;
-  $monitor("%dns monitor: op=%d a=%d b=%d sum=%d", $stime, op, a, b, sum);
+  $monitor("%dns monitor: op=%d a=%d b=%d Cin=%b sum=%d Cout=%b num=%d", $stime, op, a, b,c_in, sum,c_out,(c_out*16+sum));
 end
 
 always #100 begin

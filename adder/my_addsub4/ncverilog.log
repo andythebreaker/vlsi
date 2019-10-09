@@ -1,34 +1,74 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 09, 2019 at 15:21:02 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 09, 2019 at 15:50:19 CST
 ncverilog
 	+access+rwc
 	testbench.v
+Recompiling... reason: file './half_adder4.v' is newer than expected.
+	expected: Wed Oct  9 15:45:07 2019
+	actual:   Wed Oct  9 15:50:12 2019
 file: testbench.v
-	module worklib.adder4:v
+	module worklib.half_adder4:v
 		errors: 0, warnings: 0
-	module worklib.fulladder:v
-		errors: 0, warnings: 0
-	module worklib.xor4:v
-		errors: 0, warnings: 0
-adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
-                        |
-ncvlog: *E,NONOWD (addSub4.v,10|24): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
-(`include file: addSub4.v line 12, file: testbench.v line 4)
-adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
-                          |
-ncvlog: *E,NONOWD (addSub4.v,10|26): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
-(`include file: addSub4.v line 12, file: testbench.v line 4)
-adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
-                            |
-ncvlog: *E,NONOWD (addSub4.v,10|28): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
-(`include file: addSub4.v line 12, file: testbench.v line 4)
-adder4 a2(sum_withoutP,{0,0,0,0},op,sum,c_out);
-                              |
-ncvlog: *E,NONOWD (addSub4.v,10|30): Illegal use of a constant without an explicit width specification [4.1.14(IEEE)].
-(`include file: addSub4.v line 12, file: testbench.v line 4)
-	module worklib.addSub4:v
-		errors: 4, warnings: 0
-	module worklib.testbench:v
-		errors: 0, warnings: 0
-ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 09, 2019 at 15:21:02 CST  (total: 00:00:00)
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             13       7
+		Primitives:          33       3
+		Registers:            4       4
+		Scalar wires:         3       -
+		Expanded wires:       8       2
+		Always blocks:        2       2
+		Initial blocks:       2       2
+		Pseudo assignments:   4       4
+	Writing initial simulation snapshot: worklib.testbench:v
+Loading snapshot worklib.testbench:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+        50ns monitor: op=1 a=  5 b=  0 Cin=0 sum= -5 Cout=1 num=        27
+       100ns monitor: op=0 a=  5 b=  1 Cin=0 sum=  6 Cout=0 num=         6
+       150ns monitor: op=1 a=  5 b=  1 Cin=0 sum= -4 Cout=1 num=        28
+       200ns monitor: op=0 a=  5 b=  2 Cin=0 sum=  7 Cout=0 num=         7
+       250ns monitor: op=1 a=  5 b=  2 Cin=0 sum= -3 Cout=1 num=        29
+       300ns monitor: op=0 a=  5 b=  3 Cin=0 sum= -8 Cout=0 num=         8
+       350ns monitor: op=1 a=  5 b=  3 Cin=0 sum= -2 Cout=1 num=        30
+       400ns monitor: op=0 a=  5 b=  4 Cin=0 sum= -7 Cout=0 num=         9
+       450ns monitor: op=1 a=  5 b=  4 Cin=0 sum= -1 Cout=1 num=        31
+       500ns monitor: op=0 a=  5 b=  5 Cin=0 sum= -6 Cout=0 num=        10
+       550ns monitor: op=1 a=  5 b=  5 Cin=0 sum=  0 Cout=1 num=        16
+       600ns monitor: op=0 a=  5 b=  6 Cin=0 sum= -5 Cout=0 num=        11
+       650ns monitor: op=1 a=  5 b=  6 Cin=0 sum=  1 Cout=1 num=        17
+       700ns monitor: op=0 a=  5 b=  7 Cin=0 sum= -4 Cout=0 num=        12
+       750ns monitor: op=1 a=  5 b=  7 Cin=0 sum=  2 Cout=1 num=        18
+       800ns monitor: op=0 a=  5 b= -8 Cin=0 sum= -3 Cout=0 num=        13
+       850ns monitor: op=1 a=  5 b= -8 Cin=0 sum=  3 Cout=1 num=        19
+       900ns monitor: op=0 a=  5 b= -7 Cin=0 sum= -2 Cout=0 num=        14
+       950ns monitor: op=1 a=  5 b= -7 Cin=0 sum=  4 Cout=1 num=        20
+      1000ns monitor: op=0 a=  5 b= -6 Cin=0 sum= -1 Cout=0 num=        15
+      1050ns monitor: op=1 a=  5 b= -6 Cin=0 sum=  5 Cout=1 num=        21
+      1100ns monitor: op=0 a=  5 b= -5 Cin=0 sum=  0 Cout=1 num=        16
+      1150ns monitor: op=1 a=  5 b= -5 Cin=0 sum=  6 Cout=1 num=        22
+      1200ns monitor: op=0 a=  5 b= -4 Cin=0 sum=  1 Cout=1 num=        17
+      1250ns monitor: op=1 a=  5 b= -4 Cin=0 sum=  7 Cout=1 num=        23
+      1300ns monitor: op=0 a=  5 b= -3 Cin=0 sum=  2 Cout=1 num=        18
+      1350ns monitor: op=1 a=  5 b= -3 Cin=0 sum= -8 Cout=0 num=         8
+      1400ns monitor: op=0 a=  5 b= -2 Cin=0 sum=  3 Cout=1 num=        19
+      1450ns monitor: op=1 a=  5 b= -2 Cin=0 sum= -7 Cout=0 num=         9
+      1500ns monitor: op=0 a=  5 b= -1 Cin=0 sum=  4 Cout=1 num=        20
+      1550ns monitor: op=1 a=  5 b= -1 Cin=0 sum= -6 Cout=0 num=        10
+      1600ns monitor: op=0 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=         5
+      1650ns monitor: op=1 a=  5 b=  0 Cin=0 sum= -5 Cout=1 num=        27
+      1700ns monitor: op=0 a=  5 b=  1 Cin=0 sum=  6 Cout=0 num=         6
+      1750ns monitor: op=1 a=  5 b=  1 Cin=0 sum= -4 Cout=1 num=        28
+      1800ns monitor: op=0 a=  5 b=  2 Cin=0 sum=  7 Cout=0 num=         7
+      1850ns monitor: op=1 a=  5 b=  2 Cin=0 sum= -3 Cout=1 num=        29
+      1900ns monitor: op=0 a=  5 b=  3 Cin=0 sum= -8 Cout=0 num=         8
+      1950ns monitor: op=1 a=  5 b=  3 Cin=0 sum= -2 Cout=1 num=        30
+      2000ns monitor: op=0 a=  5 b=  4 Cin=0 sum= -7 Cout=0 num=         9
+Simulation complete via $finish(1) at time 2050 NS + 0
+./testbench.v:34 initial #2050 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 09, 2019 at 15:50:19 CST  (total: 00:00:00)
