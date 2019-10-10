@@ -1,0 +1,93 @@
+$date
+    Oct  7, 2019  21:28:03
+$end
+$version
+    TOOL:	ncsim	15.20-s039
+$end
+$timescale
+    1 ps
+$end
+
+$scope module test_bench $end
+$var reg       1 !    a  $end
+$var reg       1 "    b  $end
+$var reg       1 #    c  $end
+$var wire      1 $    s  $end
+$var wire      1 %    co  $end
+
+$scope module FA $end
+$var wire      1 &    a  $end
+$var wire      1 '    b  $end
+$var wire      1 (    c_in  $end
+$var wire      1 $    sum  $end
+$var wire      1 %    c_out  $end
+$var wire      1 )    s1  $end
+$var wire      1 *    c1  $end
+$var wire      1 +    c2  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+$end
+#5000
+1#
+1(
+1$
+#10000
+1"
+0#
+0(
+1'
+1)
+#15000
+1!
+0"
+0'
+1&
+#20000
+0!
+1"
+1#
+1(
+1'
+0&
+0$
+1+
+1%
+#25000
+1!
+0#
+0(
+1&
+0)
+0+
+1*
+#30000
+0"
+1#
+1(
+0'
+1)
+1+
+0*
+#35000
+1"
+1'
+0)
+0+
+1*
+1$
+#40000

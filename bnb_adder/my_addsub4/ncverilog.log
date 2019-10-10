@@ -1,0 +1,139 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Oct 09, 2019 at 16:28:45 CST
+ncverilog
+	+access+rwc
+	testbench.v
+Recompiling... reason: file './testbench.v' is newer than expected.
+	expected: Wed Oct  9 16:25:18 2019
+	actual:   Wed Oct  9 16:28:39 2019
+file: testbench.v
+	module worklib.testbench:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testbench:v <0x1447fe91>
+			streams:  11, words:  7102
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:             13       7
+		Primitives:          29       2
+		Registers:            4       4
+		Scalar wires:         3       -
+		Expanded wires:       8       2
+		Vectored wires:       3       -
+		Always blocks:        2       2
+		Initial blocks:       2       2
+		Cont. assignments:    3       3
+		Pseudo assignments:   4       4
+	Writing initial simulation snapshot: worklib.testbench:v
+Loading snapshot worklib.testbench:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+         0ns monitor: op=0 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+        50ns monitor: op=1 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+       100ns monitor: op=0 a=  5 b=  1 Cin=0 sum=  6 Cout=0 num=  6
+       150ns monitor: op=1 a=  5 b=  1 Cin=0 sum=  4 Cout=0 num=  4
+       200ns monitor: op=0 a=  5 b=  2 Cin=0 sum=  7 Cout=0 num=  7
+       250ns monitor: op=1 a=  5 b=  2 Cin=0 sum=  3 Cout=0 num=  3
+       300ns monitor: op=0 a=  5 b=  3 Cin=0 sum= -8 Cout=0 num= -8
+       350ns monitor: op=1 a=  5 b=  3 Cin=0 sum=  2 Cout=0 num=  2
+       400ns monitor: op=0 a=  5 b=  4 Cin=0 sum= -7 Cout=0 num= -7
+       450ns monitor: op=1 a=  5 b=  4 Cin=0 sum=  1 Cout=0 num=  1
+       500ns monitor: op=0 a=  5 b=  5 Cin=0 sum= -6 Cout=0 num= -6
+       550ns monitor: op=1 a=  5 b=  5 Cin=0 sum=  0 Cout=0 num=  0
+       600ns monitor: op=0 a=  5 b=  6 Cin=0 sum= -5 Cout=0 num= -5
+       650ns monitor: op=1 a=  5 b=  6 Cin=0 sum= -1 Cout=0 num= -1
+       700ns monitor: op=0 a=  5 b=  7 Cin=0 sum= -4 Cout=0 num= -4
+       750ns monitor: op=1 a=  5 b=  7 Cin=0 sum= -2 Cout=0 num= -2
+       800ns monitor: op=0 a=  5 b= -8 Cin=0 sum= -3 Cout=0 num= -3
+       850ns monitor: op=1 a=  5 b= -8 Cin=0 sum= -3 Cout=0 num= -3
+       900ns monitor: op=0 a=  5 b= -7 Cin=0 sum= -2 Cout=0 num= -2
+       950ns monitor: op=1 a=  5 b= -7 Cin=0 sum= -4 Cout=0 num= -4
+      1000ns monitor: op=0 a=  5 b= -6 Cin=0 sum= -1 Cout=0 num= -1
+      1050ns monitor: op=1 a=  5 b= -6 Cin=0 sum= -5 Cout=0 num= -5
+      1100ns monitor: op=0 a=  5 b= -5 Cin=0 sum=  0 Cout=0 num=  0
+      1150ns monitor: op=1 a=  5 b= -5 Cin=0 sum= -6 Cout=0 num= -6
+      1200ns monitor: op=0 a=  5 b= -4 Cin=0 sum=  1 Cout=0 num=  1
+      1250ns monitor: op=1 a=  5 b= -4 Cin=0 sum= -7 Cout=0 num= -7
+      1300ns monitor: op=0 a=  5 b= -3 Cin=0 sum=  2 Cout=0 num=  2
+      1350ns monitor: op=1 a=  5 b= -3 Cin=0 sum= -8 Cout=0 num= -8
+      1400ns monitor: op=0 a=  5 b= -2 Cin=0 sum=  3 Cout=0 num=  3
+      1450ns monitor: op=1 a=  5 b= -2 Cin=0 sum=  7 Cout=0 num=  7
+      1500ns monitor: op=0 a=  5 b= -1 Cin=0 sum=  4 Cout=0 num=  4
+      1550ns monitor: op=1 a=  5 b= -1 Cin=0 sum=  6 Cout=0 num=  6
+      1600ns monitor: op=0 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+      1650ns monitor: op=1 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+      1700ns monitor: op=0 a=  5 b=  1 Cin=0 sum=  6 Cout=0 num=  6
+      1750ns monitor: op=1 a=  5 b=  1 Cin=0 sum=  4 Cout=0 num=  4
+      1800ns monitor: op=0 a=  5 b=  2 Cin=0 sum=  7 Cout=0 num=  7
+      1850ns monitor: op=1 a=  5 b=  2 Cin=0 sum=  3 Cout=0 num=  3
+      1900ns monitor: op=0 a=  5 b=  3 Cin=0 sum= -8 Cout=0 num= -8
+      1950ns monitor: op=1 a=  5 b=  3 Cin=0 sum=  2 Cout=0 num=  2
+      2000ns monitor: op=0 a=  5 b=  4 Cin=0 sum= -7 Cout=0 num= -7
+      2050ns monitor: op=1 a=  5 b=  4 Cin=0 sum=  1 Cout=0 num=  1
+      2100ns monitor: op=0 a=  5 b=  5 Cin=0 sum= -6 Cout=0 num= -6
+      2150ns monitor: op=1 a=  5 b=  5 Cin=0 sum=  0 Cout=0 num=  0
+      2200ns monitor: op=0 a=  5 b=  6 Cin=0 sum= -5 Cout=0 num= -5
+      2250ns monitor: op=1 a=  5 b=  6 Cin=0 sum= -1 Cout=0 num= -1
+      2300ns monitor: op=0 a=  5 b=  7 Cin=0 sum= -4 Cout=0 num= -4
+      2350ns monitor: op=1 a=  5 b=  7 Cin=0 sum= -2 Cout=0 num= -2
+      2400ns monitor: op=0 a=  5 b= -8 Cin=0 sum= -3 Cout=0 num= -3
+      2450ns monitor: op=1 a=  5 b= -8 Cin=0 sum= -3 Cout=0 num= -3
+      2500ns monitor: op=0 a=  5 b= -7 Cin=0 sum= -2 Cout=0 num= -2
+      2550ns monitor: op=1 a=  5 b= -7 Cin=0 sum= -4 Cout=0 num= -4
+      2600ns monitor: op=0 a=  5 b= -6 Cin=0 sum= -1 Cout=0 num= -1
+      2650ns monitor: op=1 a=  5 b= -6 Cin=0 sum= -5 Cout=0 num= -5
+      2700ns monitor: op=0 a=  5 b= -5 Cin=0 sum=  0 Cout=0 num=  0
+      2750ns monitor: op=1 a=  5 b= -5 Cin=0 sum= -6 Cout=0 num= -6
+      2800ns monitor: op=0 a=  5 b= -4 Cin=0 sum=  1 Cout=0 num=  1
+      2850ns monitor: op=1 a=  5 b= -4 Cin=0 sum= -7 Cout=0 num= -7
+      2900ns monitor: op=0 a=  5 b= -3 Cin=0 sum=  2 Cout=0 num=  2
+      2950ns monitor: op=1 a=  5 b= -3 Cin=0 sum= -8 Cout=0 num= -8
+      3000ns monitor: op=0 a=  5 b= -2 Cin=0 sum=  3 Cout=0 num=  3
+      3050ns monitor: op=1 a=  5 b= -2 Cin=0 sum=  7 Cout=0 num=  7
+      3100ns monitor: op=0 a=  5 b= -1 Cin=0 sum=  4 Cout=0 num=  4
+      3150ns monitor: op=1 a=  5 b= -1 Cin=0 sum=  6 Cout=0 num=  6
+      3200ns monitor: op=0 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+      3250ns monitor: op=1 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+      3300ns monitor: op=0 a=  5 b=  1 Cin=0 sum=  6 Cout=0 num=  6
+      3350ns monitor: op=1 a=  5 b=  1 Cin=0 sum=  4 Cout=0 num=  4
+      3400ns monitor: op=0 a=  5 b=  2 Cin=0 sum=  7 Cout=0 num=  7
+      3450ns monitor: op=1 a=  5 b=  2 Cin=0 sum=  3 Cout=0 num=  3
+      3500ns monitor: op=0 a=  5 b=  3 Cin=0 sum= -8 Cout=0 num= -8
+      3550ns monitor: op=1 a=  5 b=  3 Cin=0 sum=  2 Cout=0 num=  2
+      3600ns monitor: op=0 a=  5 b=  4 Cin=0 sum= -7 Cout=0 num= -7
+      3650ns monitor: op=1 a=  5 b=  4 Cin=0 sum=  1 Cout=0 num=  1
+      3700ns monitor: op=0 a=  5 b=  5 Cin=0 sum= -6 Cout=0 num= -6
+      3750ns monitor: op=1 a=  5 b=  5 Cin=0 sum=  0 Cout=0 num=  0
+      3800ns monitor: op=0 a=  5 b=  6 Cin=0 sum= -5 Cout=0 num= -5
+      3850ns monitor: op=1 a=  5 b=  6 Cin=0 sum= -1 Cout=0 num= -1
+      3900ns monitor: op=0 a=  5 b=  7 Cin=0 sum= -4 Cout=0 num= -4
+      3950ns monitor: op=1 a=  5 b=  7 Cin=0 sum= -2 Cout=0 num= -2
+      4000ns monitor: op=0 a=  5 b= -8 Cin=0 sum= -3 Cout=0 num= -3
+      4050ns monitor: op=1 a=  5 b= -8 Cin=0 sum= -3 Cout=0 num= -3
+      4100ns monitor: op=0 a=  5 b= -7 Cin=0 sum= -2 Cout=0 num= -2
+      4150ns monitor: op=1 a=  5 b= -7 Cin=0 sum= -4 Cout=0 num= -4
+      4200ns monitor: op=0 a=  5 b= -6 Cin=0 sum= -1 Cout=0 num= -1
+      4250ns monitor: op=1 a=  5 b= -6 Cin=0 sum= -5 Cout=0 num= -5
+      4300ns monitor: op=0 a=  5 b= -5 Cin=0 sum=  0 Cout=0 num=  0
+      4350ns monitor: op=1 a=  5 b= -5 Cin=0 sum= -6 Cout=0 num= -6
+      4400ns monitor: op=0 a=  5 b= -4 Cin=0 sum=  1 Cout=0 num=  1
+      4450ns monitor: op=1 a=  5 b= -4 Cin=0 sum= -7 Cout=0 num= -7
+      4500ns monitor: op=0 a=  5 b= -3 Cin=0 sum=  2 Cout=0 num=  2
+      4550ns monitor: op=1 a=  5 b= -3 Cin=0 sum= -8 Cout=0 num= -8
+      4600ns monitor: op=0 a=  5 b= -2 Cin=0 sum=  3 Cout=0 num=  3
+      4650ns monitor: op=1 a=  5 b= -2 Cin=0 sum=  7 Cout=0 num=  7
+      4700ns monitor: op=0 a=  5 b= -1 Cin=0 sum=  4 Cout=0 num=  4
+      4750ns monitor: op=1 a=  5 b= -1 Cin=0 sum=  6 Cout=0 num=  6
+      4800ns monitor: op=0 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+      4850ns monitor: op=1 a=  5 b=  0 Cin=0 sum=  5 Cout=0 num=  5
+      4900ns monitor: op=0 a=  5 b=  1 Cin=0 sum=  6 Cout=0 num=  6
+      4950ns monitor: op=1 a=  5 b=  1 Cin=0 sum=  4 Cout=0 num=  4
+Simulation complete via $finish(1) at time 5 US + 0
+./testbench.v:39 initial #5000 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 09, 2019 at 16:28:45 CST  (total: 00:00:00)

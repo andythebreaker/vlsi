@@ -1,0 +1,101 @@
+         0ns monitor: op=0 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+        50ns monitor: op=1 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+       100ns monitor: op=0 a= 5 b= 1 Cin=0 sum= 6 Cout=0 num=  6
+       150ns monitor: op=1 a= 5 b= 1 Cin=0 sum= 4 Cout=1 num=-12
+       200ns monitor: op=0 a= 5 b= 2 Cin=0 sum= 7 Cout=0 num=  7
+       250ns monitor: op=1 a= 5 b= 2 Cin=0 sum= 3 Cout=1 num=-13
+       300ns monitor: op=0 a= 5 b= 3 Cin=0 sum=-8 Cout=0 num= -8
+       350ns monitor: op=1 a= 5 b= 3 Cin=0 sum= 2 Cout=1 num=-14
+       400ns monitor: op=0 a= 5 b= 4 Cin=0 sum=-7 Cout=0 num= -7
+       450ns monitor: op=1 a= 5 b= 4 Cin=0 sum= 1 Cout=1 num=-15
+       500ns monitor: op=0 a= 5 b= 5 Cin=0 sum=-6 Cout=0 num= -6
+       550ns monitor: op=1 a= 5 b= 5 Cin=0 sum= 0 Cout=1 num=-16
+       600ns monitor: op=0 a= 5 b= 6 Cin=0 sum=-5 Cout=0 num= -5
+       650ns monitor: op=1 a= 5 b= 6 Cin=0 sum=-1 Cout=0 num= -1
+       700ns monitor: op=0 a= 5 b= 7 Cin=0 sum=-4 Cout=0 num= -4
+       750ns monitor: op=1 a= 5 b= 7 Cin=0 sum=-2 Cout=0 num= -2
+       800ns monitor: op=0 a= 5 b=-8 Cin=0 sum=-3 Cout=0 num= -3
+       850ns monitor: op=1 a= 5 b=-8 Cin=0 sum=-3 Cout=0 num= -3
+       900ns monitor: op=0 a= 5 b=-7 Cin=0 sum=-2 Cout=0 num= -2
+       950ns monitor: op=1 a= 5 b=-7 Cin=0 sum=-4 Cout=0 num= -4
+      1000ns monitor: op=0 a= 5 b=-6 Cin=0 sum=-1 Cout=0 num= -1
+      1050ns monitor: op=1 a= 5 b=-6 Cin=0 sum=-5 Cout=0 num= -5
+      1100ns monitor: op=0 a= 5 b=-5 Cin=0 sum= 0 Cout=1 num=-16
+      1150ns monitor: op=1 a= 5 b=-5 Cin=0 sum=-6 Cout=0 num= -6
+      1200ns monitor: op=0 a= 5 b=-4 Cin=0 sum= 1 Cout=1 num=-15
+      1250ns monitor: op=1 a= 5 b=-4 Cin=0 sum=-7 Cout=0 num= -7
+      1300ns monitor: op=0 a= 5 b=-3 Cin=0 sum= 2 Cout=1 num=-14
+      1350ns monitor: op=1 a= 5 b=-3 Cin=0 sum=-8 Cout=0 num= -8
+      1400ns monitor: op=0 a= 5 b=-2 Cin=0 sum= 3 Cout=1 num=-13
+      1450ns monitor: op=1 a= 5 b=-2 Cin=0 sum= 7 Cout=0 num=  7
+      1500ns monitor: op=0 a= 5 b=-1 Cin=0 sum= 4 Cout=1 num=-12
+      1550ns monitor: op=1 a= 5 b=-1 Cin=0 sum= 6 Cout=0 num=  6
+      1600ns monitor: op=0 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+      1650ns monitor: op=1 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+      1700ns monitor: op=0 a= 5 b= 1 Cin=0 sum= 6 Cout=0 num=  6
+      1750ns monitor: op=1 a= 5 b= 1 Cin=0 sum= 4 Cout=1 num=-12
+      1800ns monitor: op=0 a= 5 b= 2 Cin=0 sum= 7 Cout=0 num=  7
+      1850ns monitor: op=1 a= 5 b= 2 Cin=0 sum= 3 Cout=1 num=-13
+      1900ns monitor: op=0 a= 5 b= 3 Cin=0 sum=-8 Cout=0 num= -8
+      1950ns monitor: op=1 a= 5 b= 3 Cin=0 sum= 2 Cout=1 num=-14
+      2000ns monitor: op=0 a= 5 b= 4 Cin=0 sum=-7 Cout=0 num= -7
+      2050ns monitor: op=1 a= 5 b= 4 Cin=0 sum= 1 Cout=1 num=-15
+      2100ns monitor: op=0 a= 5 b= 5 Cin=0 sum=-6 Cout=0 num= -6
+      2150ns monitor: op=1 a= 5 b= 5 Cin=0 sum= 0 Cout=1 num=-16
+      2200ns monitor: op=0 a= 5 b= 6 Cin=0 sum=-5 Cout=0 num= -5
+      2250ns monitor: op=1 a= 5 b= 6 Cin=0 sum=-1 Cout=0 num= -1
+      2300ns monitor: op=0 a= 5 b= 7 Cin=0 sum=-4 Cout=0 num= -4
+      2350ns monitor: op=1 a= 5 b= 7 Cin=0 sum=-2 Cout=0 num= -2
+      2400ns monitor: op=0 a= 5 b=-8 Cin=0 sum=-3 Cout=0 num= -3
+      2450ns monitor: op=1 a= 5 b=-8 Cin=0 sum=-3 Cout=0 num= -3
+      2500ns monitor: op=0 a= 5 b=-7 Cin=0 sum=-2 Cout=0 num= -2
+      2550ns monitor: op=1 a= 5 b=-7 Cin=0 sum=-4 Cout=0 num= -4
+      2600ns monitor: op=0 a= 5 b=-6 Cin=0 sum=-1 Cout=0 num= -1
+      2650ns monitor: op=1 a= 5 b=-6 Cin=0 sum=-5 Cout=0 num= -5
+      2700ns monitor: op=0 a= 5 b=-5 Cin=0 sum= 0 Cout=1 num=-16
+      2750ns monitor: op=1 a= 5 b=-5 Cin=0 sum=-6 Cout=0 num= -6
+      2800ns monitor: op=0 a= 5 b=-4 Cin=0 sum= 1 Cout=1 num=-15
+      2850ns monitor: op=1 a= 5 b=-4 Cin=0 sum=-7 Cout=0 num= -7
+      2900ns monitor: op=0 a= 5 b=-3 Cin=0 sum= 2 Cout=1 num=-14
+      2950ns monitor: op=1 a= 5 b=-3 Cin=0 sum=-8 Cout=0 num= -8
+      3000ns monitor: op=0 a= 5 b=-2 Cin=0 sum= 3 Cout=1 num=-13
+      3050ns monitor: op=1 a= 5 b=-2 Cin=0 sum= 7 Cout=0 num=  7
+      3100ns monitor: op=0 a= 5 b=-1 Cin=0 sum= 4 Cout=1 num=-12
+      3150ns monitor: op=1 a= 5 b=-1 Cin=0 sum= 6 Cout=0 num=  6
+      3200ns monitor: op=0 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+      3250ns monitor: op=1 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+      3300ns monitor: op=0 a= 5 b= 1 Cin=0 sum= 6 Cout=0 num=  6
+      3350ns monitor: op=1 a= 5 b= 1 Cin=0 sum= 4 Cout=1 num=-12
+      3400ns monitor: op=0 a= 5 b= 2 Cin=0 sum= 7 Cout=0 num=  7
+      3450ns monitor: op=1 a= 5 b= 2 Cin=0 sum= 3 Cout=1 num=-13
+      3500ns monitor: op=0 a= 5 b= 3 Cin=0 sum=-8 Cout=0 num= -8
+      3550ns monitor: op=1 a= 5 b= 3 Cin=0 sum= 2 Cout=1 num=-14
+      3600ns monitor: op=0 a= 5 b= 4 Cin=0 sum=-7 Cout=0 num= -7
+      3650ns monitor: op=1 a= 5 b= 4 Cin=0 sum= 1 Cout=1 num=-15
+      3700ns monitor: op=0 a= 5 b= 5 Cin=0 sum=-6 Cout=0 num= -6
+      3750ns monitor: op=1 a= 5 b= 5 Cin=0 sum= 0 Cout=1 num=-16
+      3800ns monitor: op=0 a= 5 b= 6 Cin=0 sum=-5 Cout=0 num= -5
+      3850ns monitor: op=1 a= 5 b= 6 Cin=0 sum=-1 Cout=0 num= -1
+      3900ns monitor: op=0 a= 5 b= 7 Cin=0 sum=-4 Cout=0 num= -4
+      3950ns monitor: op=1 a= 5 b= 7 Cin=0 sum=-2 Cout=0 num= -2
+      4000ns monitor: op=0 a= 5 b=-8 Cin=0 sum=-3 Cout=0 num= -3
+      4050ns monitor: op=1 a= 5 b=-8 Cin=0 sum=-3 Cout=0 num= -3
+      4100ns monitor: op=0 a= 5 b=-7 Cin=0 sum=-2 Cout=0 num= -2
+      4150ns monitor: op=1 a= 5 b=-7 Cin=0 sum=-4 Cout=0 num= -4
+      4200ns monitor: op=0 a= 5 b=-6 Cin=0 sum=-1 Cout=0 num= -1
+      4250ns monitor: op=1 a= 5 b=-6 Cin=0 sum=-5 Cout=0 num= -5
+      4300ns monitor: op=0 a= 5 b=-5 Cin=0 sum= 0 Cout=1 num=-16
+      4350ns monitor: op=1 a= 5 b=-5 Cin=0 sum=-6 Cout=0 num= -6
+      4400ns monitor: op=0 a= 5 b=-4 Cin=0 sum= 1 Cout=1 num=-15
+      4450ns monitor: op=1 a= 5 b=-4 Cin=0 sum=-7 Cout=0 num= -7
+      4500ns monitor: op=0 a= 5 b=-3 Cin=0 sum= 2 Cout=1 num=-14
+      4550ns monitor: op=1 a= 5 b=-3 Cin=0 sum=-8 Cout=0 num= -8
+      4600ns monitor: op=0 a= 5 b=-2 Cin=0 sum= 3 Cout=1 num=-13
+      4650ns monitor: op=1 a= 5 b=-2 Cin=0 sum= 7 Cout=0 num=  7
+      4700ns monitor: op=0 a= 5 b=-1 Cin=0 sum= 4 Cout=1 num=-12
+      4750ns monitor: op=1 a= 5 b=-1 Cin=0 sum= 6 Cout=0 num=  6
+      4800ns monitor: op=0 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+      4850ns monitor: op=1 a= 5 b= 0 Cin=0 sum= 5 Cout=0 num=  5
+      4900ns monitor: op=0 a= 5 b= 1 Cin=0 sum= 6 Cout=0 num=  6
+      4950ns monitor: op=1 a= 5 b= 1 Cin=0 sum= 4 Cout=1 num=-12
+      5000ns monitor: op=0 a= 5 b= 2 Cin=0 sum= 7 Cout=0 num=  7

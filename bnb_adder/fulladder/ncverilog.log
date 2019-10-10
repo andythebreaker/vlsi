@@ -1,0 +1,45 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Oct 07, 2019 at 21:28:02 CST
+ncverilog
+	+access+rwc
+	test_bench.v
+Recompiling... reason: file './test_bench.v' is newer than expected.
+	expected: Mon Oct  7 21:03:39 2019
+	actual:   Mon Oct  7 21:27:50 2019
+file: test_bench.v
+	module worklib.test_bench:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test_bench:v <0x5fde2c69>
+			streams:   6, words:  8429
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Primitives:              5       2
+		Registers:               3       3
+		Scalar wires:            3       -
+		Initial blocks:          2       2
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.test_bench:v
+Loading snapshot worklib.test_bench:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+=========This is a test bench of FULL ADDER=========
+                   0 || a= 0 | b= 0 | c= 0 | s= 0 | os= 0
+                   5 || a= 0 | b= 0 | c= 1 | s= 1 | os= 0
+                  10 || a= 0 | b= 1 | c= 0 | s= 1 | os= 0
+                  15 || a= 1 | b= 0 | c= 0 | s= 1 | os= 0
+                  20 || a= 0 | b= 1 | c= 1 | s= 0 | os= 1
+                  25 || a= 1 | b= 1 | c= 0 | s= 0 | os= 1
+                  30 || a= 1 | b= 0 | c= 1 | s= 0 | os= 1
+                  35 || a= 1 | b= 1 | c= 1 | s= 1 | os= 1
+Simulation complete via $finish(1) at time 40 NS + 0
+./test_bench.v:38 #5 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 07, 2019 at 21:28:03 CST  (total: 00:00:01)
