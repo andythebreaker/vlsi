@@ -8,5 +8,11 @@ output C_out ;
 output O ;
 
 /** your code **/
-
+  assign SUM=(Add_ctrl==0)?(A+B):(A-B);
+wire pn;
+assign e=A[15];
+assign r=B[15];
+assign pn=(Add_ctrl==1)?(((e==0)&&(r==1))||((e==1)&&(r==0)))?1:0:(((e==0)&&(r==0))||((e==1)&&(r==1)))?1:0;
+assign O=(pn==1)?(C_out==SUM[15])?0:1:0;
+  
 endmodule
