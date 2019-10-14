@@ -96,8 +96,8 @@ end
 
 initial
 begin
-	$fsdbDumpfile("adder_s.fsdb");
-	$fsdbDumpvars;
+	$dumpfile("add_s_16.vcd");
+	$dumpvars;
 end
 
 	

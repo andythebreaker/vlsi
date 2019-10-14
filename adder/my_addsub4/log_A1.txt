@@ -1,8 +1,4 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 14, 2019 at 15:04:02 CST
-ncverilog
-	+access+rwc
-	testbench.v
 Loading snapshot worklib.tb_adder:v .................... Done
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
@@ -30012,4 +30008,3 @@ There're  30000 errors in your design
 Simulation complete via $finish(1) at time 100 US + 0
 ./testbench.v:93 	$finish ;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 14, 2019 at 15:04:03 CST  (total: 00:00:01)
