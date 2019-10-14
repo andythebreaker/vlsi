@@ -8,5 +8,7 @@ output C_out ;
 output O ;
 
 /** your code **/
+xor x1(b,{
+adder16 ()
 
 endmodule
