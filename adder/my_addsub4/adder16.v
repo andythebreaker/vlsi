@@ -1,4 +1,4 @@
-module adder4(input signed [15:0] a, input signed [15:0] b, input c_in, 
+module adder16(input signed [15:0] a, input signed [15:0] b, input c_in, 
               output signed [15:0] sum, output c_out);
 wire [3:0] c;
 
