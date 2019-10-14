@@ -1,5 +1,6 @@
-module xor4(input [15:0] a, input [15:0] b, output signed [15:0] y);
-//  assign y = a ^ b;
+module xor16(input [15:0] a, input [15:0] b, output signed [15:0] y);
+ // assign y = a ^ b;
+
 	xor(y[0],a[0],b[0]);
 	xor(y[1],a[1],b[1]);
 	xor(y[2],a[2],b[2]);
@@ -16,4 +17,5 @@ module xor4(input [15:0] a, input [15:0] b, output signed [15:0] y);
 	xor(y[13],a[13],b[13]);
 	xor(y[14],a[14],b[14]);
 	xor(y[15],a[15],b[15]);
+
 endmodule

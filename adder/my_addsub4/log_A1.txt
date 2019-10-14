@@ -30006,5 +30006,5 @@ ERROR at time=              100000(pattern      10000): O(z)!= expect(0)
 There're  30000 errors in your design
 =================================================
 Simulation complete via $finish(1) at time 100 US + 0
-./testbench.v:93 	$finish ;
+./testbench.v:94 	$finish ;
 ncsim> exit

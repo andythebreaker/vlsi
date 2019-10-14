@@ -13,8 +13,8 @@ output O ;
 wire [15:0] comp2;
 
   /** your code **/
-  xor4 x1(b,{Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl},contrast);
-half_adder4 ha1(contrast,Add_ctrl,comp2,co);
-adder16 a1(a,comp2,0,SUM,C_out);
+  xor16 x1(B,{Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl},contrast);
+half_adder16 ha1(contrast,Add_ctrl,comp2,co);
+adder16 a1(A,comp2,0,SUM,C_out);
 
 endmodule

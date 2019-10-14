@@ -2,12 +2,11 @@
 `include        "adder_s.v"
 `include "adder4.v"
 `include "fulladder.v"
-//`include "xor4.v"
 `include "xor16.v"
-//`include "addSub4.v"
 `include "half_adder.v"
 `include "half_adder4.v"
 `include "adder16.v"
+`include "half_adder16.v"
 
 module tb_adder ;
 reg [15:0] A , B ;
