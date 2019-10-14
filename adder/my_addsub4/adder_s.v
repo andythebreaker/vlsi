@@ -1,5 +1,5 @@
-`include "half_adder4.v";
-`include "adder16.v";
+//`include "half_adder4.v";
+//`include "adder16.v";
 module adder_16bit_s(A , B ,Add_ctrl , O , C_out , SUM);
 
 input [15:0] A , B ;
@@ -13,8 +13,8 @@ output O ;
 wire [15:0] comp2;
 
   /** your code **/
-  xor x1(b,{Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl},contrast);
+  xor4 x1(b,{Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl},contrast);
 half_adder4 ha1(contrast,Add_ctrl,comp2,co);
-adder16 (a,comp2,Add_ctrl,0,SUM,C_out);
+adder16 a1(a,comp2,0,SUM,C_out);
 
 endmodule
