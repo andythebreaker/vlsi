@@ -2,5 +2,5 @@
 // File created by:  ncverilog
 // Do not modify this file
 //
-+access+rwc
-Tas16.v
++access+wrc
+testbench.v

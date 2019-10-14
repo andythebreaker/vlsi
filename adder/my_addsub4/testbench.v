@@ -95,7 +95,7 @@ end
 
 initial
 begin
-	$dumpfile("add_s_16.vcd");
+	$dumpfile("addS16_new.vcd");
 	$dumpvars;
 end
 

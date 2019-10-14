@@ -1,5 +1,5 @@
-adder16.v
-/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/adder/my_addsub4/adder16.v
+adder_s.v
+/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/adder/my_addsub4/adder_s.v
 adder4.v
 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/adder/my_addsub4/adder4.v
 fulladder.v
@@ -10,5 +10,7 @@ half_adder.v
 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/adder/my_addsub4/half_adder.v
 half_adder4.v
 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/adder/my_addsub4/half_adder4.v
+adder16.v
+/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/adder/my_addsub4/adder16.v
 half_adder16.v
 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/adder/my_addsub4/half_adder16.v
