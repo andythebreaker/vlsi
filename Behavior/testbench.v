@@ -88,8 +88,8 @@ end
 
 initial
 begin
-	$fsdbDumpfile("adder_b.fsdb");
-	$fsdbDumpvars;
+	$dumpfile("addS16_new.vcd");
+	$dumpvars;
 end
 	
 endmodule
