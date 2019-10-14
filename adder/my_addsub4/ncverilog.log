@@ -1,11 +1,11 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 14, 2019 at 21:24:24 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 14, 2019 at 21:40:26 CST
 ncverilog
 	+access+wrc
 	testbench.v
 Recompiling... reason: file './adder_s.v' is newer than expected.
-	expected: Mon Oct 14 21:11:14 2019
-	actual:   Mon Oct 14 21:24:24 2019
+	expected: Mon Oct 14 21:24:24 2019
+	actual:   Mon Oct 14 21:40:24 2019
 file: testbench.v
 	module worklib.adder_16bit_s:v
 		errors: 0, warnings: 0
@@ -13,22 +13,22 @@ file: testbench.v
 	Elaborating the design hierarchy:
 adder16 a1(A,comp2,0,SUM,C_out);
                    |
-ncelab: *W,CUVMPW (./adder_s.v,19|19): port sizes differ in port connection (32/1).
+ncelab: *W,CUVMPW (./adder_s.v,20|19): port sizes differ in port connection (32/1).
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.adder_16bit_s:v <0x14fcae2b>
-			streams:   3, words:  1276
+		worklib.adder_16bit_s:v <0x47d5ee61>
+			streams:   1, words:   113
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                  Instances  Unique
 		Modules:                 45       9
-		Primitives:             128       2
+		Primitives:             136       4
 		Registers:                9       9
-		Scalar wires:            11       -
+		Scalar wires:            10       -
 		Expanded wires:          32       2
 		Initial blocks:           4       4
-		Cont. assignments:        2       4
+		Cont. assignments:        0       2
 		Pseudo assignments:       4       4
 		Simulation timescale:  10ps
 	Writing initial simulation snapshot: worklib.tb_adder:v
@@ -43,4 +43,4 @@ Congratulation!, Your design PASSed all the test patterns
 Simulation complete via $finish(1) at time 100 US + 0
 ./testbench.v:92 	$finish ;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 14, 2019 at 21:24:26 CST  (total: 00:00:02)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 14, 2019 at 21:40:29 CST  (total: 00:00:03)
