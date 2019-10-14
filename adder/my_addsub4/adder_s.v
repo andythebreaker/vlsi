@@ -12,7 +12,7 @@ output O ;
   wire [15:0] contrast;
 wire [15:0] comp2;
 wire co,e,r;//co can't be O!
-wire pn;
+//wire pn;
 wire p0,p1,p2,p3,p4,p5,p6;
   /** your code **/
   xor16 x1(B,{Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl,Add_ctrl},contrast);
