@@ -1,41 +1,96 @@
-`include "adder4.v"
-`include "fulladder.v"
-`include "xor4.v"
-`include "addSub4.v"
-`include "half_adder.v"
-`include "half_adder4.v"
-module testbench;
-reg signed [3:0] a;
-reg signed [3:0] b;
-wire signed [3:0] sum;
-reg op;
-reg c_in;
-wire c_out;
-wire signed [4:0] n;
-wire signed [4:0] num;
+`timescale 1ns/10ps
+`include        "adder_s.v"
 
-addSub4 DUT (op, a, b,c_in, sum, c_out);
+module tb_adder ;
+reg [15:0] A , B ;
+reg Add_ctrl ;
+
+wire [15:0] SUM;
+wire C_out ;
+wire O ;
+
+
+reg [15:0] mem_A [9999:0] ;
+reg [15:0] mem_B [9999:0] ;
+reg mem_add_ctrl [9999:0] ;
+reg [17:0] expect [9999:0] ;
+
+reg    [16:0] error = 0;
+integer i ;
+
+initial 
+begin
+	$readmemh("A.txt", mem_A);
+	$readmemh("B.txt", mem_B);
+	$readmemh("Add_ctrl.txt", mem_add_ctrl);
+	$readmemh("Result.txt", expect);
+end
+
+
+adder_16bit_s u_adder(        .A            (A        ),
+                .B            (B        ),
+                .Add_ctrl     (Add_ctrl ),
+                .O            (O        ),
+                .C_out        (C_out    ),
+                .SUM          (SUM      )
+);
+
+initial 
+begin
+
+	for (i =0 ; i <= 9999; i = i + 1 )          
+  begin
+    A = mem_A[i] ;
+	B = mem_B[i] ;
+	Add_ctrl = mem_add_ctrl[i] ;
+    
+    #10;
+    if (SUM !== expect[i][15:0])
+        begin
+           $display ("ERROR at time=%d(pattern%d): SUM(%h)!= expect(%h)",
+                      $time, i+1, SUM, expect[i][15:0]);
+           error = error + 1;
+	end
+		
+    if (C_out !== expect[i][16])
+	begin
+           $display ("ERROR at time=%d(pattern%d): C_out(%b)!= expect(%b)", 
+                      $time,  i+1, C_out, expect[i][16]);
+           error = error + 1;
+	end
+
+    if ( O !== expect[i][17])
+	begin
+           $display ("ERROR at time=%d(pattern%d): O(%b)!= expect(%b)",
+                      $time, i+1, O , expect[i][17]);
+	    error = error + 1;
+	end
+    end
+
+     if(error == 17'b0)
+     begin
+      $display ("=============================================================");
+      $display ("Congratulation!, Your design PASSed all the test patterns ");
+	  $display ("^     ^");
+	  $display (" +++++");
+      $display ("=============================================================");
+      end
+      else
+      begin
+      $display ("=================================================");
+      $display ("There're %d errors in your design", error); 
+      $display ("=================================================");
+      end
+
+	$finish ;
+end
+
 
 initial
 begin
-c_in=1'b0;
-  a = 4'b0101;
-  b = 4'b0000;
-  op = 1'b0;
-  $monitor("%dns monitor: op=%d a=%d b=%d Cin=%b sum=%d Cout=%b num=%d", $stime, op, a, b,c_in, sum,c_out,(n+sum));
-
-end
-assign n = c_out ? 5'd16 : 5'd0;
-assign num = n + sum;
-
-always #50 begin
-  op=op+1;
+	$fsdbDumpfile("adder_s.fsdb");
+	$fsdbDumpvars;
 end
 
-always #100 begin
-  b=b+1;
-end
-
-initial #5000 $finish;
-
+	
 endmodule
