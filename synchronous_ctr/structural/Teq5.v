@@ -2,7 +2,7 @@
 `include "eq5.v"
 module Teq5;
 
-reg [5:0] a,b;
+reg [4:0] a,b;
 wire s;
 
 eq5 e(a,b,s);
