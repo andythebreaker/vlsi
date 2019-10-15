@@ -6,3 +6,4 @@
 1571164956 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/Tes.v
 1571170186 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/Tdff.v
 1571169518 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/Tretf.v
+1571174345 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/testbench.v

@@ -1,18 +1,29 @@
 `timescale 1ns/1ps
-`include "synchronous_ctr_b.v"
+`include "synchronous_ctr_s.v"
+`include "half_adder.v"
+`include "half_adder5.v"
+`include "ff5.v"
+`include "eq5.v"
+`include "enable_sr.v"
+`include "rising_edge_trigger_ff.v"
+`include "SR_latch_gate.v"
+`include "sub_bor5.v"
+`include "subtractor_borrow.v"
+`include "MUX.v"
+
 module testbench;
 
 reg ct,clk,cn,rst;
 wire [4:0] op;
 
-synchronous_ctr_b scb(clk,ct,cn,rst,op);
+synchronous_ctr_s scs(clk,ct,cn,rst,op);
 
 integer i,j;
 
 initial begin
 rst = 0;
 clk = 0;
-cn = 0;
+cn = 1;
 ct = 0;
 end
 
