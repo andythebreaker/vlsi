@@ -1,18 +1,22 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 15, 2019 at 22:25:41 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 15, 2019 at 23:59:39 CST
 ncverilog
 	+access+rwc
 	testbench.v
-Recompiling... reason: file './testbench.v' is newer than expected.
-	expected: Tue Oct 15 22:24:19 2019
-	actual:   Tue Oct 15 22:25:47 2019
+Recompiling... reason: file './synchronous_ctr_b.v' is newer than expected.
+	expected: Tue Oct 15 21:26:15 2019
+	actual:   Tue Oct 15 23:56:29 2019
 file: testbench.v
+	module worklib.synchronous_ctr_b:v
+		errors: 0, warnings: 0
 	module worklib.testbench:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
+		worklib.synchronous_ctr_b:v <0x4da5ed96>
+			streams:   1, words:   853
 		worklib.testbench:v <0x0ab94c13>
 			streams:  12, words: 10720
 	Building instance specific data structures.
@@ -618,4 +622,4 @@ Time=                25870 | op= 14
 Simulation complete via $finish(1) at time 25995 NS + 0
 ./testbench.v:94 #10 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 15, 2019 at 22:25:41 CST  (total: 00:00:00)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 15, 2019 at 23:59:40 CST  (total: 00:00:01)

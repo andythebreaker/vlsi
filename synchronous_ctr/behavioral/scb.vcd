@@ -1,5 +1,5 @@
 $date
-    Oct 15, 2019  22:25:41
+    Oct 15, 2019  23:59:40
 $end
 $version
     TOOL:	ncsim	15.20-s039
@@ -13,7 +13,7 @@ $var reg       1 !    ct  $end
 $var reg       1 "    clk  $end
 $var reg       1 #    cn  $end
 $var reg       1 $    rst  $end
-$var wire      6 %    op [5:0] $end
+$var wire      5 %    op [4:0] $end
 $var integer  32 &    i  $end
 $var integer  32 '    j  $end
 
@@ -22,8 +22,8 @@ $var wire      1 (    clk  $end
 $var wire      1 )    ct  $end
 $var wire      1 *    cn  $end
 $var wire      1 +    rst  $end
-$var wire      6 %    op [5:0] $end
-$var reg       6 ,    rop [5:0] $end
+$var wire      5 %    op [4:0] $end
+$var reg       5 ,    rop [4:0] $end
 $upscope $end
 
 $upscope $end

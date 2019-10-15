@@ -1,5 +1,5 @@
 $date
-    Oct 15, 2019  23:10:44
+    Oct 16, 2019  00:01:53
 $end
 $version
     TOOL:	ncsim	15.20-s039
@@ -9,8 +9,8 @@ $timescale
 $end
 
 $scope module Teq5 $end
-$var reg       6 !    a [5:0] $end
-$var reg       6 "    b [5:0] $end
+$var reg       5 !    a [4:0] $end
+$var reg       5 "    b [4:0] $end
 $var wire      1 #    s  $end
 
 $scope module e $end
