@@ -1,11 +1,11 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 15, 2019 at 19:17:19 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 15, 2019 at 19:33:23 CST
 ncverilog
 	+access+rwc
 	testbench.v
 Recompiling... reason: file './adder_b.v' is newer than expected.
-	expected: Tue Oct 15 19:16:42 2019
-	actual:   Tue Oct 15 19:17:25 2019
+	expected: Tue Oct 15 19:17:25 2019
+	actual:   Tue Oct 15 19:33:28 2019
 file: testbench.v
 	module worklib.adder_16bit_b:v
 		errors: 0, warnings: 0
@@ -40,4 +40,4 @@ Congratulation!, Your design PASSed all the test patterns
 Simulation complete via $finish(1) at time 100 US + 0
 ./testbench.v:86 	$finish ;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 15, 2019 at 19:17:20 CST  (total: 00:00:01)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 15, 2019 at 19:33:25 CST  (total: 00:00:02)
