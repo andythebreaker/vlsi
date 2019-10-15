@@ -1,8 +1,37 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 14, 2019 at 21:54:54 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 15, 2019 at 19:42:41 CST
 ncverilog
 	+access+rwc
 	testbench.v
+Recompiling... reason: file './adder_s.v' is newer than expected.
+	expected: Mon Oct 14 21:44:08 2019
+	actual:   Tue Oct 15 19:42:27 2019
+file: testbench.v
+	module worklib.adder_16bit_s:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+adder16 a1(A,comp2,0,SUM,C_out);//main add!
+                   |
+ncelab: *W,CUVMPW (./adder_s.v,22|19): port sizes differ in port connection (32/1).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.adder_16bit_s:v <0x05998c1b>
+			streams:   1, words:   113
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 45       9
+		Primitives:             136       4
+		Registers:                9       9
+		Scalar wires:             9       -
+		Expanded wires:          32       2
+		Initial blocks:           4       4
+		Cont. assignments:        0       2
+		Pseudo assignments:       4       4
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.tb_adder:v
 Loading snapshot worklib.tb_adder:v .................... Done
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
@@ -14,4 +43,4 @@ Congratulation!, Your design PASSed all the test patterns
 Simulation complete via $finish(1) at time 100 US + 0
 ./testbench.v:92 	$finish ;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 14, 2019 at 21:54:54 CST  (total: 00:00:00)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 15, 2019 at 19:42:43 CST  (total: 00:00:02)
