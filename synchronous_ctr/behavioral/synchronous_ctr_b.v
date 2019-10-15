@@ -3,10 +3,10 @@ input clk,
 input ct,/*control | '0' -> '+' |  '1' -> '-'*/
 input cn,/*count*/
 input rst,
-output [5:0] op
+output [4:0] op
 );
 
-reg [5:0] rop;
+reg [4:0] rop;
 assign op=rop;
 
 always@(posedge clk or posedge rst)
