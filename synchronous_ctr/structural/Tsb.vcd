@@ -1,0 +1,48 @@
+$date
+    Oct 15, 2019  23:35:27
+$end
+$version
+    TOOL:	ncsim	15.20-s039
+$end
+$timescale
+    1 ps
+$end
+
+$scope module Tsb $end
+$var reg       1 !    targ  $end
+$var reg       1 "    sub  $end
+$var wire      1 #    out  $end
+$var wire      1 $    bor  $end
+
+$scope module sb1 $end
+$var wire      1 %    targ  $end
+$var wire      1 &    sub  $end
+$var wire      1 #    out  $end
+$var wire      1 $    bor  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+$end
+#10000
+1!
+1%
+1#
+#20000
+1"
+1&
+0#
+#30000
+0!
+0%
+1#
+1$
+#40000

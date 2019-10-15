@@ -1,1 +1,1 @@
-   eq5 ok
+   sub_borror 1bit ok

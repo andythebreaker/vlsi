@@ -1,47 +1,39 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 15, 2019 at 23:10:44 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 15, 2019 at 23:35:25 CST
 ncverilog
 	+access+rwc
-	Teq5.v
-Recompiling... reason: file './Teq5.v' is newer than expected.
-	expected: Tue Oct 15 23:09:54 2019
-	actual:   Tue Oct 15 23:10:50 2019
-file: Teq5.v
-	module worklib.Teq5:v
+	Tsb.v
+file: Tsb.v
+	module worklib.subtractor_borrow:v
+		errors: 0, warnings: 0
+	module worklib.Tsb:v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
-eq5 e(a,b,s);
-      |
-ncelab: *W,CUVMPW (./Teq5.v,8|6): port sizes differ in port connection (6/5).
-eq5 e(a,b,s);
-        |
-ncelab: *W,CUVMPW (./Teq5.v,8|8): port sizes differ in port connection (6/5).
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.Teq5:v <0x7fdea0d8>
-			streams:   6, words:  5604
+		worklib.Tsb:v <0x36a1d7a4>
+			streams:   6, words:  5369
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 2       2
-		Primitives:              9       2
+		Primitives:              2       2
 		Registers:               2       2
-		Expanded wires:         10       2
+		Scalar wires:            2       -
 		Initial blocks:          3       3
 		Pseudo assignments:      2       2
 		Simulation timescale:  1ps
-	Writing initial simulation snapshot: worklib.Teq5:v
-Loading snapshot worklib.Teq5:v .................... Done
+	Writing initial simulation snapshot: worklib.Tsb:v
+Loading snapshot worklib.Tsb:v .................... Done
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
-Time=                    0 | a=  0 | b=  0 | s= 0
-Time=                   10 | a= 20 | b= 20 | s= 0
-Time=                   20 | a= 19 | b= 20 | s= 1
-Time=                   30 | a= 19 | b=  0 | s= 1
-Time=                   40 | a=  0 | b=  0 | s= 0
-Simulation complete via $finish(1) at time 50 NS + 0
-./Teq5.v:18 #10 $finish;
+Time=                    0 | targ= 0 | sub= 0 | out= 0 | bor= 0
+Time=                   10 | targ= 1 | sub= 0 | out= 1 | bor= 0
+Time=                   20 | targ= 1 | sub= 1 | out= 0 | bor= 0
+Time=                   30 | targ= 0 | sub= 1 | out= 1 | bor= 1
+Simulation complete via $finish(1) at time 40 NS + 0
+./Tsb.v:16 #10 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 15, 2019 at 23:10:44 CST  (total: 00:00:00)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 15, 2019 at 23:35:27 CST  (total: 00:00:02)
