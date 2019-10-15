@@ -3,7 +3,7 @@
 module testbench;
 
 reg ct,clk,cn,rst;
-wire [5:0] op;
+wire [4:0] op;
 
 synchronous_ctr_b scb(clk,ct,cn,rst,op);
 
