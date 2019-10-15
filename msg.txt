@@ -1,1 +1,1 @@
-   sub_borror 1bit ok
+   find prob. [4:0] -> dis. writ. -> [5:0] <<need fix>>
