@@ -5,18 +5,19 @@ module Tlatch;
 reg s,r;
 wire q,p;
 
-latch l(s,r,q,p);
+SR_latch_gate l(s,r,q,p);
 
 initial begin
 s=1'b0;
 r=1'b0;
 #10 s=1'b1;
-#10 r=1'b1;
 #10 s=1'b0;
+#10 r=1'b1;
 #10 r=1'b0;
 #10 s=1'b1;
-#10 r=1'b1;
+r=1'b1;
 #10 s=1'b0;
+r=1'b0;
 #10 $finish;
 end
 

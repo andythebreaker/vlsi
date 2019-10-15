@@ -1,0 +1,93 @@
+$date
+    Oct 16, 2019  02:42:31
+$end
+$version
+    TOOL:	ncsim	15.20-s039
+$end
+$timescale
+    1 ps
+$end
+
+$scope module Tes $end
+$var reg       1 !    d  $end
+$var reg       1 "    e  $end
+$var wire      1 #    q  $end
+$var wire      1 $    p  $end
+
+$scope module es1 $end
+$var wire      1 %    d  $end
+$var wire      1 &    e  $end
+$var wire      1 #    q  $end
+$var wire      1 $    p  $end
+$var wire      1 '    od  $end
+$var wire      1 (    s  $end
+$var wire      1 )    r  $end
+
+$scope module sr1 $end
+$var wire      1 )    R  $end
+$var wire      1 (    S  $end
+$var wire      1 #    Q  $end
+$var wire      1 $    Qbar  $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+x#
+x$
+0%
+0&
+1'
+0(
+0)
+$end
+#10000
+1!
+1%
+0'
+#20000
+0!
+0%
+1'
+#30000
+1"
+1&
+1)
+0#
+1$
+#40000
+1!
+1%
+1(
+0'
+0)
+0$
+1#
+#50000
+0"
+0&
+0(
+#60000
+0!
+0%
+1'
+#70000
+1"
+1&
+1)
+0#
+1$
+#80000
+1!
+1%
+1(
+0'
+0)
+0$
+1#
+#90000

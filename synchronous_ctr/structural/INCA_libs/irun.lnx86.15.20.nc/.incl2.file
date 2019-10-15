@@ -1,2 +1,8 @@
 SR_latch_gate.v
 /home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/SR_latch_gate.v
+enable_sr.v
+/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/enable_sr.v
+rising_edge_trigger_ff.v
+/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/rising_edge_trigger_ff.v
+dff_R_asyn.v
+/home/ncku_class/vlsi2019/vlsi2006/mydir/vlsi/synchronous_ctr/structural/dff_R_asyn.v

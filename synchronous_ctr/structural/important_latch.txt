@@ -1,0 +1,14 @@
+when doing latch
+if use two nor to make sr_latch
+-> q will be q and p will be q_bar
+
+but if use two nand to make sr_latch
+it will be up side down
+
+NO!!!!!!!!!!!!!!
+
+this is wrong!!!!!!!!!!!!!!!
+the prob. that cause q and p different (up side down)
+is that ::->
+in the same row puts :: r and q (is wright)
+if put s and q in the same row will get -> up side down

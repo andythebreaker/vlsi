@@ -1,0 +1,14 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+Loading snapshot worklib.latch:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+Time=                    0 | s= 0 | r= 0 | q= x | p= x
+Time=                   10 | s= 1 | r= 0 | q= 0 | p= 1
+Time=                   20 | s= 0 | r= 0 | q= 0 | p= 1
+Time=                   30 | s= 0 | r= 1 | q= 1 | p= 0
+Time=                   40 | s= 0 | r= 0 | q= 1 | p= 0
+Time=                   50 | s= 1 | r= 1 | q= 0 | p= 0
+Time=                   60 | s= 0 | r= 0 | q= 1 | p= 0
+Simulation complete via $finish(1) at time 70 NS + 0
+./Tlatch.v:21 #10 $finish;
+ncsim> exit

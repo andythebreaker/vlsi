@@ -1,19 +1,47 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 16, 2019 at 02:12:53 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 16, 2019 at 04:09:38 CST
 ncverilog
 	+access+rwc
-	TlatchX.v
-Loading snapshot worklib.T_SR_latch_gate:v .................... Done
+	Tdff.v
+Recompiling... reason: file './Tdff.v' is newer than expected.
+	expected: Wed Oct 16 04:08:58 2019
+	actual:   Wed Oct 16 04:09:46 2019
+file: Tdff.v
+	module worklib.Tdff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.Tdff:v <0x05d47d21>
+			streams:   8, words:  6308
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 7       5
+		Primitives:             14       4
+		Registers:               4       4
+		Scalar wires:            5       -
+		Always blocks:           1       1
+		Initial blocks:          3       3
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.Tdff:v
+Loading snapshot worklib.Tdff:v .................... Done
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
-Time=                    0 | s= 0 | r= 0 | q= x | p= x
-Time=                   10 | s= 1 | r= 0 | q= 1 | p= 0
-Time=                   20 | s= 0 | r= 0 | q= 1 | p= 0
-Time=                   30 | s= 0 | r= 1 | q= 0 | p= 1
-Time=                   40 | s= 0 | r= 0 | q= 0 | p= 1
-Time=                   50 | s= 1 | r= 1 | q= 0 | p= 0
-Time=                   60 | s= 0 | r= 0 | q= 0 | p= 1
-Simulation complete via $finish(1) at time 70 NS + 0
-./TlatchX.v:21 #10 $finish;
+Time=                    0 | d= 0 | clr= 0 | q= x
+Time=                   10 | d= 0 | clr= 0 | q= 0
+Time=                   15 | d= 1 | clr= 0 | q= 0
+Time=                   30 | d= 1 | clr= 0 | q= 1
+Time=                   31 | d= 0 | clr= 0 | q= 1
+Time=                   41 | d= 1 | clr= 0 | q= 1
+Time=                   44 | d= 0 | clr= 0 | q= 1
+Time=                   49 | d= 1 | clr= 0 | q= 1
+Time=                   53 | d= 1 | clr= 1 | q= 0
+Time=                   63 | d= 1 | clr= 0 | q= 1
+Simulation complete via $finish(1) at time 73 NS + 0
+./Tdff.v:28 #10 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 16, 2019 at 02:12:53 CST  (total: 00:00:00)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 16, 2019 at 04:09:38 CST  (total: 00:00:00)
