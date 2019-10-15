@@ -1,1 +1,1 @@
-   ___  sub|eq is ok
+   ___  latch of X  is ok

@@ -1,0 +1,41 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+Recompiling... reason: file './TlatchX.v' is newer than expected.
+	expected: Wed Oct 16 01:15:51 2019
+	actual:   Wed Oct 16 02:12:44 2019
+file: TlatchX.v
+	module worklib.T_SR_latch_gate:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.T_SR_latch_gate:v <0x38e046ea>
+			streams:   6, words:  6212
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Primitives:              2       1
+		Registers:               2       2
+		Scalar wires:            2       -
+		Initial blocks:          3       3
+		Pseudo assignments:      2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.T_SR_latch_gate:v
+Loading snapshot worklib.T_SR_latch_gate:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+
+//look at current state and not next state!!!
+
+Time=                    0 | s= 0 | r= 0 | q= x | p= x
+Time=                   10 | s= 1 | r= 0 | q= 1 | p= 0//set 1
+Time=                   20 | s= 0 | r= 0 | q= 1 | p= 0//keep 1
+Time=                   30 | s= 0 | r= 1 | q= 0 | p= 1//set 0
+Time=                   40 | s= 0 | r= 0 | q= 0 | p= 1//keep 0
+Time=                   50 | s= 1 | r= 1 | q= 0 | p= 0//un DEF
+Time=                   60 | s= 0 | r= 0 | q= 0 | p= 1//~
+Simulation complete via $finish(1) at time 70 NS + 0
+./TlatchX.v:21 #10 $finish;
+ncsim> exit

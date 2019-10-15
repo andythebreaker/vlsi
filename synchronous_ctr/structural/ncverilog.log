@@ -1,101 +1,19 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Oct 16, 2019 at 00:18:06 CST
+TOOL:	ncverilog	15.20-s039: Started on Oct 16, 2019 at 02:12:53 CST
 ncverilog
 	+access+rwc
-	Tsb5.v
-Recompiling... reason: file './Tsb5.v' is newer than expected.
-	expected: Wed Oct 16 00:16:35 2019
-	actual:   Wed Oct 16 00:18:13 2019
-file: Tsb5.v
-	module worklib.Tsb5:v
-		errors: 0, warnings: 0
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-		Caching library 'worklib' ....... Done
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-		worklib.Tsb5:v <0x7d11dc77>
-			streams:   8, words:  5098
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                 Instances  Unique
-		Modules:                 7       3
-		Primitives:             10       2
-		Registers:               2       2
-		Scalar wires:            1       -
-		Expanded wires:          5       1
-		Always blocks:           1       1
-		Initial blocks:          4       4
-		Pseudo assignments:      2       2
-		Simulation timescale:  1ps
-	Writing initial simulation snapshot: worklib.Tsb5:v
-Loading snapshot worklib.Tsb5:v .................... Done
+	TlatchX.v
+Loading snapshot worklib.T_SR_latch_gate:v .................... Done
 ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
 ncsim> run
-Time=                    0 | inp=  0 | oup=  0
-Time=                   10 | inp=  1 | oup=  1
-Time=                   20 | inp=  2 | oup=  2
-Time=                   30 | inp=  3 | oup=  3
-Time=                   40 | inp=  4 | oup=  4
-Time=                   50 | inp=  5 | oup=  5
-Time=                   60 | inp=  6 | oup=  6
-Time=                   70 | inp=  7 | oup=  7
-Time=                   80 | inp=  8 | oup=  8
-Time=                   90 | inp=  9 | oup=  9
-Time=                  100 | inp= 10 | oup= 10
-Time=                  110 | inp= 11 | oup= 11
-Time=                  120 | inp= 12 | oup= 12
-Time=                  130 | inp= 13 | oup= 13
-Time=                  140 | inp= 14 | oup= 14
-Time=                  150 | inp= 15 | oup= 15
-Time=                  160 | inp= 16 | oup= 16
-Time=                  170 | inp= 17 | oup= 17
-Time=                  180 | inp= 18 | oup= 18
-Time=                  190 | inp= 19 | oup= 19
-Time=                  200 | inp= 20 | oup= 20
-Time=                  204 | inp= 20 | oup= 19
-Time=                  210 | inp= 21 | oup= 20
-Time=                  220 | inp= 22 | oup= 21
-Time=                  230 | inp= 23 | oup= 22
-Time=                  240 | inp= 24 | oup= 23
-Time=                  250 | inp= 25 | oup= 24
-Time=                  260 | inp= 26 | oup= 25
-Time=                  270 | inp= 27 | oup= 26
-Time=                  280 | inp= 28 | oup= 27
-Time=                  290 | inp= 29 | oup= 28
-Time=                  300 | inp= 30 | oup= 29
-Time=                  310 | inp= 31 | oup= 30
-Time=                  320 | inp=  0 | oup= 31
-Time=                  330 | inp=  1 | oup=  0
-Time=                  340 | inp=  2 | oup=  1
-Time=                  350 | inp=  3 | oup=  2
-Time=                  360 | inp=  4 | oup=  3
-Time=                  370 | inp=  5 | oup=  4
-Time=                  380 | inp=  6 | oup=  5
-Time=                  390 | inp=  7 | oup=  6
-Time=                  400 | inp=  8 | oup=  7
-Time=                  410 | inp=  9 | oup=  8
-Time=                  420 | inp= 10 | oup=  9
-Time=                  430 | inp= 11 | oup= 10
-Time=                  440 | inp= 12 | oup= 11
-Time=                  450 | inp= 13 | oup= 12
-Time=                  460 | inp= 14 | oup= 13
-Time=                  470 | inp= 15 | oup= 14
-Time=                  480 | inp= 16 | oup= 15
-Time=                  490 | inp= 17 | oup= 16
-Time=                  500 | inp= 18 | oup= 17
-Time=                  510 | inp= 19 | oup= 18
-Time=                  520 | inp= 20 | oup= 19
-Time=                  530 | inp= 21 | oup= 20
-Time=                  540 | inp= 22 | oup= 21
-Time=                  550 | inp= 23 | oup= 22
-Time=                  560 | inp= 24 | oup= 23
-Time=                  570 | inp= 25 | oup= 24
-Time=                  580 | inp= 26 | oup= 25
-Time=                  590 | inp= 27 | oup= 26
-Time=                  600 | inp= 28 | oup= 27
-Simulation complete via $finish(1) at time 610 NS + 0
-./Tsb5.v:27 #406 $finish;
+Time=                    0 | s= 0 | r= 0 | q= x | p= x
+Time=                   10 | s= 1 | r= 0 | q= 1 | p= 0
+Time=                   20 | s= 0 | r= 0 | q= 1 | p= 0
+Time=                   30 | s= 0 | r= 1 | q= 0 | p= 1
+Time=                   40 | s= 0 | r= 0 | q= 0 | p= 1
+Time=                   50 | s= 1 | r= 1 | q= 0 | p= 0
+Time=                   60 | s= 0 | r= 0 | q= 0 | p= 1
+Simulation complete via $finish(1) at time 70 NS + 0
+./TlatchX.v:21 #10 $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Oct 16, 2019 at 00:18:06 CST  (total: 00:00:00)
+TOOL:	ncverilog	15.20-s039: Exiting on Oct 16, 2019 at 02:12:53 CST  (total: 00:00:00)
