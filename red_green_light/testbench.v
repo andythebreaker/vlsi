@@ -1,9 +1,41 @@
 `timescale 1ns/10ps
-
+`define SNT 1000000000
 `include "main_ltc.v"
 
 module test_bench;
-reg [15:0] A , B ;
+
+reg clk,N,rst;
+
+wire J,P,C;
+
+main_ltc N_main_ltc(
+.J(J),
+.P(P),
+.C(C),
+.clk(clk),
+.N(N),
+.rst(rst)
+);
+
+initial
+begin
+clk=0;
+N=0;
+#1 rst=1;
+#1 rst=0;
+end
+
+//clock producer
+always
+begin
+#SNT clk=~clk;
+end
+
+initial 
+begin
+$monitor($time," | J=%b | P=%b | C=%b",J,P,B);
+end
+
 reg Add_ctrl ;
 
 wire [15:0] SUM;

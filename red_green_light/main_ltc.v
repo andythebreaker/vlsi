@@ -9,7 +9,8 @@ output J,
 output P,
 output C,
 input clk,
-input N);
+input N,
+input rst);
 
 reg Jr,Pr,Cr;
 assign J=Jr;
@@ -32,6 +33,13 @@ assign C=Cr;
 //~
 
 reg [11:0] counter;
+always@(rst)
+begin
+counter=12d'0;
+Jr=0;
+Pr=0;
+Cr=0;
+end
 
 always@(posedge clk)
 begin//always
