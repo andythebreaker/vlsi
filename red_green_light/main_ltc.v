@@ -1,8 +1,4 @@
 `timescale 1ns/10ps
-`define SNT 1000000000
-`define L 10
-`define S 3
-`define DEBUG_CLK 1
 
 module main_ltc(
 output J,
@@ -11,6 +7,11 @@ output C,
 input clk,
 input N,
 input rst);
+
+parameter SNT = 1000000000;
+parameter L = 10;
+parameter S = 3;
+parameter DEBUG_CLK = 0;
 
 reg Jr,Pr,Cr;
 assign J=Jr;
@@ -35,8 +36,8 @@ assign C=Cr;
 reg [11:0] counter;
 always@(rst)
 begin
-counter=12d'0;
-Jr=0;
+counter=12'd0;
+Jr=1;
 Pr=0;
 Cr=0;
 end
@@ -50,7 +51,7 @@ begin//J
 if(DEBUG_CLK) $display("debug.info=always@pos[clk]!J_is_high");
 //end of debug
 
-if(counter<(L+S))//Here can be changed %%% if need change time relationship
+if(counter<(L+S-1))//Here can be changed %%% if need change time relationship
 begin//if
 counter=counter+12'd1;
 end//fi
@@ -69,7 +70,7 @@ begin//P
 if(DEBUG_CLK) $display("debug.info=always@pos[clk]!P_is_high");
 //end of debug
 
-if(counter<(L-S))//Here can be changed %%% if need change time relationship
+if(counter<(L-S-1))//Here can be changed %%% if need change time relationship
 begin//if
 counter=counter+12'd1;
 end//fi
@@ -88,7 +89,7 @@ begin//C
 if(DEBUG_CLK) $display("debug.info=always@pos[clk]!C_is_high");
 //end of debug
 
-if(counter<(L+2*S))//Here can be changed %%% if need change time relationship
+if(counter<(L+2*S-1))//Here can be changed %%% if need change time relationship
 begin//if
 counter=counter+12'd1;
 end//fi
