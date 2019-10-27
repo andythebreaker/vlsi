@@ -18,6 +18,7 @@ parameter S = 3;
 parameter DEBUG_CLK = 0;
 parameter DEBUG_VIEW_TIME = 0;
 parameter DEBUG_PRINT_COUNTER = 0;
+parameter DEBUG_ABLE_ERROR = 1;
 
 reg Jr,Pr,Cr,Nr,Nd;
 assign J=Jr;
@@ -69,6 +70,8 @@ if(N || Nr)
 				Cr=~Cr;
 				Nr=0;
 				Nd=1;
+				counter=12'd0;
+				thcount=12'd0;
 			end
 		else if(counter<S)
 			begin//if(S)
@@ -82,10 +85,24 @@ if(N || Nr)
 			end
 		else//if(s)
 			begin//s
-				Jr=(Cr)?1:0;
-				Pr=(Jr)?1:0;
+				if(Jr)
+					begin//jr
+						Cr=0;
+						Pr=1;
+						Jr=0;
+					end//jr
+				else if(Cr)
+					begin//cr
+						Jr=1;
+						Pr=0;
+						Cr=0;
+					end//cr
+				else//error!
+					if(DEBUG_ABLE_ERROR) $display("ERROR.info=@N[Jr,Cr](all!=1)!");
 				Nr=0;
 				Nd=1;
+				counter=12'd0;
+				thcount=12'd0;
 			end//s
 	end//N
 else if (Jr)

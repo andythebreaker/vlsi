@@ -1,1 +1,1 @@
-ok for 1000子循環 
+N fcn complite test for n complite

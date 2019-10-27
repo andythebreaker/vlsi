@@ -24,7 +24,7 @@ parameter FIN = 250;
 parameter FINSNT = SNT * FIN;
 parameter HCY = SNT / 2;
 parameter UHC = HCY / 1000;
-parameter HOW_LONG_TO_N = 50;
+parameter HOW_LONG_TO_N = 60;
 
 integer i;
 
@@ -72,7 +72,7 @@ end
 
 initial 
 begin
-$monitor($time," | J=%b | P=%b | C=%b",J,P,C);
+$monitor($time," | N=%b | J=%b | P=%b | C=%b",N,J,P,C);
 end
 
 endmodule
