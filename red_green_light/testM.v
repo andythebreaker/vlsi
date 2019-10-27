@@ -1,6 +1,5 @@
 `timescale 1ns/10ps
 `include "main_ltc.v"
-`include "yg.v"
 
 module test_bench;
 
@@ -32,7 +31,6 @@ integer i;
 reg clk,N,rst;
 
 wire J,P,C;
-wire Jy,Jg,Cy,Cg;
 
 main_ltc N_main_ltc(
 .J(J),
@@ -41,19 +39,6 @@ main_ltc N_main_ltc(
 .clk(clk),
 .N(N),
 .rst(rst)
-);
-
-yg N_yg(
-.J(J),
-.P(P),
-.C(C),
-.clk(clk),
-.N(N),
-.rst(rst),
-.Jy(Jy),
-.Jg(Jg),
-.Cy(Cy),
-.Cg(Cg)
 );
 
 initial
@@ -87,7 +72,7 @@ end
 
 initial 
 begin
-$monitor($time," | N=%b | J=%b | P=%b | C=%b | Jy=%b | Jg=%b | Cy=%b | Cg=%b",N,J,P,C,Jy,Jg,Cy,Cg);
+$monitor($time," | N=%b | J=%b | P=%b | C=%b",N,J,P,C);
 end
 
 endmodule
