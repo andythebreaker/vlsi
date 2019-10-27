@@ -8,7 +8,7 @@ input clk,
 input N,
 input rst);
 
-parameter SNT = 1000000000;
+//parameter SNT = 1000000000;
 parameter UCY = 1000;//require clock cycle = 1 us
 //==================count clock======================
 //count 1000 clock of us make 1 sec.
@@ -19,7 +19,7 @@ parameter DEBUG_CLK = 0;
 parameter DEBUG_VIEW_TIME = 0;
 parameter DEBUG_PRINT_COUNTER = 0;
 
-reg Jr,Pr,Cr;
+reg Jr,Pr,Cr,Nr,Nd;
 assign J=Jr;
 assign P=Pr;
 assign C=Cr;
@@ -49,11 +49,46 @@ thcount=12'd0;
 Jr=1;
 Pr=0;
 Cr=0;
+Nr=0;
+Nd=1;
 end
 
-always@(posedge clk)
+always@(posedge clk or posedge N)
 begin//always
-if (Jr)
+if(N || Nr)
+	//debug.info
+	begin//N
+		if(DEBUG_CLK) $display("debug.info=always@N||Nr! N=%b | Nr=%b",N,Nr);
+		Nr=(Nd)?N:Nr;
+		thcount=(Nd)?12'd0:thcount;
+		counter=(Nd)?12'd0:counter;
+		Nd=0;
+		if(Pr)
+			begin
+				Pr=~Pr;
+				Cr=~Cr;
+				Nr=0;
+				Nd=1;
+			end
+		else if(counter<S)
+			begin//if(S)
+				if(thcount<UCY)//if(ucy)
+					thcount=thcount+12'd1;
+				else//else(ucy)
+					begin//else(ucy)
+						thcount=12'd0;
+						counter=counter+12'd1;
+					end//else(ucy)
+			end
+		else//if(s)
+			begin//s
+				Jr=(Cr)?1:0;
+				Pr=(Jr)?1:0;
+				Nr=0;
+				Nd=1;
+			end//s
+	end//N
+else if (Jr)
 begin//J
 
 //debug into case

@@ -20,10 +20,13 @@ parameter SNT = 1000000000;//1 seconed
 //UHC:
 //make cycle into 1 us (10^6)
 //==============================================
-parameter FIN = 100;
+parameter FIN = 250;
 parameter FINSNT = SNT * FIN;
 parameter HCY = SNT / 2;
 parameter UHC = HCY / 1000;
+parameter HOW_LONG_TO_N = 50;
+
+integer i;
 
 reg clk,N,rst;
 
@@ -55,6 +58,16 @@ end
 initial
 begin
 #FINSNT $finish;
+end
+
+always
+begin
+for(i=0;i<HOW_LONG_TO_N;i=i+1)
+begin
+#SNT i=i+0;
+end
+N=1;
+#3 N=0;
 end
 
 initial 
