@@ -1,6 +1,6 @@
 `timescale 1ns/10ps
 
-module main_ltc(
+module ryg(
 output J,
 output P,
 output C,
@@ -9,15 +9,9 @@ input N,
 input rst);
 
 parameter SNT = 1000000000;
-parameter UCY = 1000;//require clock cycle = 1 us
-//==================count clock======================
-//count 1000 clock of us make 1 sec.
-//===================================================
 parameter L = 10;
 parameter S = 3;
 parameter DEBUG_CLK = 0;
-parameter DEBUG_VIEW_TIME = 0;
-parameter DEBUG_PRINT_COUNTER = 0;
 
 reg Jr,Pr,Cr;
 assign J=Jr;
@@ -40,12 +34,9 @@ assign C=Cr;
 //~
 
 reg [11:0] counter;
-reg [11:0] thcount;//count 1000
-
 always@(rst)
 begin
 counter=12'd0;
-thcount=12'd0;
 Jr=1;
 Pr=0;
 Cr=0;
@@ -60,20 +51,13 @@ begin//J
 if(DEBUG_CLK) $display("debug.info=always@pos[clk]!J_is_high");
 //end of debug
 
-if(counter<(L+S))//Here can be changed %%% if need change time relationship
+if(counter<(L+S-1))//Here can be changed %%% if need change time relationship
 begin//if
-if (thcount<UCY)//count to 1000
-thcount=thcount+12'd1;
-else
-begin//ct 1000
 counter=counter+12'd1;
-thcount=12'd0;
-end//end 1000
 end//fi
 else
 begin//time up
 counter=12'd0;
-
 Jr=~Jr;
 Pr=~Pr;
 end//time up
@@ -86,15 +70,9 @@ begin//P
 if(DEBUG_CLK) $display("debug.info=always@pos[clk]!P_is_high");
 //end of debug
 
-if(counter<(L-S))//Here can be changed %%% if need change time relationship
+if(counter<(L-S-1))//Here can be changed %%% if need change time relationship
 begin//if
-if (thcount<UCY)//count to 1000
-thcount=thcount+12'd1;
-else
-begin//ct 1000
 counter=counter+12'd1;
-thcount=12'd0;
-end//end 1000
 end//fi
 else
 begin//time up
@@ -111,15 +89,9 @@ begin//C
 if(DEBUG_CLK) $display("debug.info=always@pos[clk]!C_is_high");
 //end of debug
 
-if(counter<(L+2*S))//Here can be changed %%% if need change time relationship
+if(counter<(L+2*S-1))//Here can be changed %%% if need change time relationship
 begin//if
-if (thcount<UCY)//count to 1000
-thcount=thcount+12'd1;
-else
-begin//ct 1000
 counter=counter+12'd1;
-thcount=12'd0;
-end//end 1000
 end//fi
 else
 begin//time up
@@ -137,12 +109,6 @@ if(DEBUG_CLK) $display("ERROR.info=always@pos[clk]!got into default");
 //end of debug
 
 end//fi
-
-//view time
-if(DEBUG_VIEW_TIME) $display($time);
-if(DEBUG_PRINT_COUNTER) $display("%d",counter);
-//end debug
-
 end//always
 //~
 

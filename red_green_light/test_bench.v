@@ -14,10 +14,16 @@ parameter SNT = 1000000000;//1 seconed
 //change FIN (in sec. unit) to "ns" (*10^9)
 //HCY:
 //If I want to get a wave with a period (wavelength) of 1, I will need a half-cycle 0.5 conversion interval.
+//~
+//because cycle of HCY is 1 sec. 
+//it will cause timer to be not accurate
+//UHC:
+//make cycle into 1 us (10^6)
 //==============================================
 parameter FIN = 100;
 parameter FINSNT = SNT * FIN;
 parameter HCY = SNT / 2;
+parameter UHC = HCY / 1000;
 
 reg clk,N,rst;
 
@@ -43,7 +49,7 @@ end
 //clock producer
 always
 begin
-#HCY clk=~clk;
+#UHC clk=~clk;
 end
 
 initial
