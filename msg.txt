@@ -1,1 +1,1 @@
-N fcn complite test for n complite
+add test log for N
