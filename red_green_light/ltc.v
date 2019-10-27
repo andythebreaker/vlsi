@@ -1,6 +1,5 @@
-`timescale 1ns/10ps
-`include "main_ltc.v"
-`include "yg.v"
+//`timescale 1ns/10ps
+
 module ltc(
 output Jr,
 output Pr,
@@ -42,3 +41,4 @@ assign Cy = Cyw;
 assign Cg = Cgw;
 assign Jr=(Jyw)?0:(Jgw)?0:1;
 assign Cr= (Cyw)?0:(Cgw)?0:1;
+endmodule

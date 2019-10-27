@@ -1,5 +1,6 @@
 `timescale 1ns/10ps
-`include "ltc.v"
+`include "main_ltc.v"
+`include "yg.v"
 
 module test_bench;
 
@@ -24,26 +25,35 @@ parameter FIN = 250;
 parameter FINSNT = SNT * FIN;
 parameter HCY = SNT / 2;
 parameter UHC = HCY / 1000;
-parameter HOW_LONG_TO_N = 55;
+parameter HOW_LONG_TO_N = 60;
 
 integer i;
 
 reg clk,N,rst;
 
-wire Jy,Jg,Cy,Cg,Jr,Pr,Cr,Pg;
+wire J,P,C;
+wire Jy,Jg,Cy,Cg;
 
-ltc nl(
-output Jr,
-output Pr,
-output Cr,
-output Jy,
-output Cy,
-output Jg,
-output Pg,
-output Cg,
-input clk,
-input N,
-input rst
+main_ltc N_main_ltc(
+.J(J),
+.P(P),
+.C(C),
+.clk(clk),
+.N(N),
+.rst(rst)
+);
+
+yg N_yg(
+.J(J),
+.P(P),
+.C(C),
+.clk(clk),
+.N(N),
+.rst(rst),
+.Jy(Jy),
+.Jg(Jg),
+.Cy(Cy),
+.Cg(Cg)
 );
 
 initial
@@ -77,7 +87,7 @@ end
 
 initial 
 begin
-$monitor($time," | N=%b | Jg=%b | Jy=%b | Jr=%b | Pg=%b | Pr=%b | Cg=%b | Cy=%b | Cr=%b",N,Jg,Jy,Jr,Pg,Pr,Cg,Cy,Cr);
+$monitor($time," | N=%b | J=%b | P=%b | C=%b | Jy=%b | Jg=%b | Cy=%b | Cg=%b",N,J,P,C,Jy,Jg,Cy,Cg);
 end
 
 endmodule
