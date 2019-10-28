@@ -9,7 +9,7 @@ input N,
 input rst);
 
 //parameter SNT = 1000000000;
-parameter UCY = 1000;//require clock cycle = 1 us
+parameter UCY = 1;//require clock cycle = 1 us
 //==================count clock======================
 //count 1000 clock of us make 1 sec.
 //===================================================

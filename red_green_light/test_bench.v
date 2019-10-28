@@ -1,10 +1,10 @@
-`timescale 1ns/10ps
+`timescale 1us/10ns
 `include "ltc.v"
 `include "main_ltc.v"
 `include "yg.v"
 module test_bench;
 
-parameter SNT = 1000000000;//1 seconed
+parameter SNT = 1000000;//1 seconed
 //=========Method of simulating time============
 //SNT:
 //timescale = 1 ns ;;; which is 10^-9 seconed
@@ -21,11 +21,12 @@ parameter SNT = 1000000000;//1 seconed
 //UHC:
 //make cycle into 1 us (10^6)
 //==============================================
-parameter FIN = 250;
+parameter FIN = 200;
 parameter FINSNT = SNT * FIN;
 parameter HCY = SNT / 2;
-parameter UHC = HCY / 1000;
-parameter HOW_LONG_TO_N = 55;
+parameter UHC = HCY;
+parameter HOW_LONG_TO_N = 0;
+parameter disableN = 1;
 
 integer i;
 
@@ -72,12 +73,18 @@ for(i=0;i<HOW_LONG_TO_N;i=i+1)
 begin
 #SNT i=i+0;
 end
-N=1;
+N=(disableN)?0:1;
 #3 N=0;
 end
 
 initial 
 begin
 $monitor($time," | N=%b | Jg=%b | Jy=%b | Jr=%b | Pg=%b | Pr=%b | Cg=%b | Cy=%b | Cr=%b",N,Jg,Jy,Jr,Pg,Pr,Cg,Cy,Cr);
+end
+
+initial
+begin
+$dumpfile("ltc.vcd");
+$dumpvars;
 end
 endmodule

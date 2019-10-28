@@ -18,10 +18,10 @@ assign Jg=Jgr;
 assign Cy=Cyr;
 assign Cg=Cgr;
 
-parameter UCY = 1000;
+parameter UCY = 1;
 parameter L = 10;
 parameter S = 3;
-parameter DEBUG_CLK = 0;
+//parameter DEBUG_CLK = 0;
 parameter DEBUG_VIEW_TIME = 0;
 parameter DEBUG_PRINT_COUNTER = 0;
 //parameter DEBUG_ABLE_ERROR = 1;
@@ -119,7 +119,7 @@ lck=(sp)?0:lck;
 if(N || lck)
 	//debug.info
 	begin//N
-		if(DEBUG_CLK) $display("debug.info=always@N||Nr! N=%b | Nr=%b",N,Nr);
+		//if(DEBUG_CLK) $display("debug.info=always@N||Nr! N=%b | Nr=%b",N,Nr);
 /*
 	counter=(sp)?12'd0:counter;
 	thcount=(sp)?12'd0:thcount;
@@ -186,7 +186,7 @@ else if (J/*r*/)
 begin//J
 
 //debug into case
-if(DEBUG_CLK) $display("debug.info=always@pos[clk]!J_is_high");
+//if(DEBUG_CLK) $display("debug.info=always@pos[clk]!J_is_high");
 //end of debug
 
 if(counter<L)//Here can be changed %%% if need change time relationship
@@ -243,7 +243,7 @@ else if (C/*r*/)
 begin//C
 
 //debug into case
-if(DEBUG_CLK) $display("debug.info=always@pos[clk]!C_is_high");
+//if(DEBUG_CLK) $display("debug.info=always@pos[clk]!C_is_high");
 //end of debug
 
 if(counter<(L+S))//Here can be changed %%% if need change time relationship

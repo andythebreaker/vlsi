@@ -28,6 +28,7 @@ yg ny(
 .C(C),
 .clk(clk),
 .N(N),
+.rst(rst),
 .Jy(Jyw),
 .Jg(Jgw),
 .Cy(Cyw),

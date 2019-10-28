@@ -1,0 +1,30 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+Loading snapshot worklib.test_bench:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+                   0 | N=0 | Jg=x | Jy=x | Jr=x | Pg=x | Pr=x | Cg=x | Cy=x | Cr=x
+                   1 | N=0 | Jg=1 | Jy=0 | Jr=0 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+                   2 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+              500000 | N=0 | Jg=1 | Jy=0 | Jr=0 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+            21500000 | N=0 | Jg=0 | Jy=1 | Jr=0 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+            26500000 | N=0 | Jg=0 | Jy=1 | Jr=0 | Pg=1 | Pr=0 | Cg=0 | Cy=0 | Cr=1
+            27500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=1 | Pr=0 | Cg=0 | Cy=0 | Cr=1
+            41500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+            42500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=1 | Cy=0 | Cr=0
+            68500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=0 | Cy=1 | Cr=0
+            75500000 | N=0 | Jg=1 | Jy=0 | Jr=0 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+            95500000 | N=0 | Jg=0 | Jy=1 | Jr=0 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+           101500000 | N=0 | Jg=0 | Jy=1 | Jr=0 | Pg=1 | Pr=0 | Cg=0 | Cy=0 | Cr=1
+           102500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=1 | Pr=0 | Cg=0 | Cy=0 | Cr=1
+           116500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+           117500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=1 | Cy=0 | Cr=0
+           143500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=0 | Cy=1 | Cr=0
+           150500000 | N=0 | Jg=1 | Jy=0 | Jr=0 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+           170500000 | N=0 | Jg=0 | Jy=1 | Jr=0 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+           176500000 | N=0 | Jg=0 | Jy=1 | Jr=0 | Pg=1 | Pr=0 | Cg=0 | Cy=0 | Cr=1
+           177500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=1 | Pr=0 | Cg=0 | Cy=0 | Cr=1
+           191500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=0 | Cy=0 | Cr=1
+           192500000 | N=0 | Jg=0 | Jy=0 | Jr=1 | Pg=0 | Pr=1 | Cg=1 | Cy=0 | Cr=0
+Simulation complete via $finish(1) at time 200 MS + 0
+./test_bench.v:67 #FINSNT $finish;
+ncsim> exit
