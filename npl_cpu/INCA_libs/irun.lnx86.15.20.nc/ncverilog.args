@@ -3,4 +3,4 @@
 // Do not modify this file
 //
 +access+rwc
-nplcpu.v
+instruction_set_model.v
