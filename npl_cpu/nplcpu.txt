@@ -18,6 +18,7 @@ A reduced instruction set computer (RISC)
 problem:
 1) why memory = 2^12 = reg. file = 2^12
 2) a+b=c [addr # = 3]?
+3) Condition codes  ??  Processor status register
 ======================================
 <!--10 instructions-->
 32-bit instruction register
