@@ -9,3 +9,5 @@ s8(19Nov2019:21:04:02):  ncverilog +access+rwc nplcpu.v
 s9(19Nov2019:21:04:18):  ncverilog +access+rwc nplcpu.v 
 s10(19Nov2019:21:05:44):  ncverilog +access+rwc nplcpu.v 
 s11(19Nov2019:21:19:55):  ncverilog +access+rwc instruction_set_model.v 
+s12(19Nov2019:21:24:02):  ncverilog +access+rwc instruction_set_model.v 
+s13(19Nov2019:21:24:40):  ncverilog +access+rwc instruction_set_model.v 

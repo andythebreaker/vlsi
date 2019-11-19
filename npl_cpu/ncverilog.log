@@ -1,5 +1,5 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Nov 19, 2019 at 21:19:55 CST
+TOOL:	ncverilog	15.20-s039: Started on Nov 19, 2019 at 21:24:40 CST
 ncverilog
 	+access+rwc
 	instruction_set_model.v
@@ -1565,4 +1565,4 @@ ncvlog: *E,NOTSTT (instruction_set_model.v,276|44): expecting a statement [9(IEE
 		errors: 144, warnings: 375
 ncvlog: *F,NOTOPL: no top-level unit found, must have recursive instances.
 ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).
-TOOL:	ncverilog	15.20-s039: Exiting on Nov 19, 2019 at 21:19:56 CST  (total: 00:00:01)
+TOOL:	ncverilog	15.20-s039: Exiting on Nov 19, 2019 at 21:24:41 CST  (total: 00:00:01)
