@@ -99,7 +99,7 @@ begin
       getdst = RFILE[`DST];
   end
   else begin // immediate type
-    $display(""Error:Immediate data can't be destination. ");
+    $display("Error:Immediate data can't be destination. ");
    end
 end
 endfunction
