@@ -155,7 +155,7 @@ case(`OPCODE)
            setcondcode({1'b0,RFILE[`DST]}) ;
                end
   `STR : begin
-             clearcondcode    
+             clearcondcode  ;  
            if (`SRCTYPE)
                     begin
                              MEM[`DST] = `SRC;
@@ -210,7 +210,7 @@ case(`OPCODE)
                clearcondcode ;
                src1 = getsrc(ir) ;
                src2 = getdst(ir) ;
-               dir = (src1[ADDRSIZE-1] >=0 ? `RIGHT : `LEFT ;
+          dir = (src1[ADDRSIZE-1] >=0 )? `RIGHT : `LEFT ;
                i = ( src1[ADDRSIZE-1] >=0)? src1 : -src1[ADDRSIZE-1:0] ;
              while (i > 0) begin
       if (dir == `RIGHT) begin
@@ -285,7 +285,7 @@ endtask
 initial begin : prog_load
      $readmemb("sisc.prog ",MEM);
      $monitor("%d %d %h %h %h ",
-     $time,pc,RFILE[0], RFILE[1]; RFILE[2]) ;
+              $time,pc,RFILE[0], RFILE[1], RFILE[2]) ;
      apply_reset ;
 end
 
