@@ -114,7 +114,7 @@ begin
      `CCE : checkcond =  `EVEN ;
      `CCP : checkcond =  `PARITY ;
      `CCZ : checkcond =  `ZERO ;
-     `CCN : chedkcond =  `NEG ;
+     `CCN : checkcond =  `NEG ;
      `CCA : checkcond =  1; 
 endcase
 end
