@@ -152,12 +152,18 @@ case(`OPCODE)
              clearcondcode ;
            if (`SRCTYPE) RFILE[`DST] = `SRC ;
         else RFILE[`DST]=MEM[`SRC] ;
-            setcondcode({1'bo,RFILE[`DST]}) ;
+           setcondcode({1'b0,RFILE[`DST]}) ;
                end
   `STR : begin
              clearcondcode    
-              if (`SRCTYPE) MEM[`DST] = `SRC;
-              else MEM[`DST] = RFILE[`SRC] ;
+           if (`SRCTYPE)
+                    begin
+                             MEM[`DST] = `SRC;
+                    end
+              else 
+                       begin
+                                MEM[`DST] = RFILE[`SRC] ;
+                       end
                  if (`SRCTYPE) setcondcode({21'b0,`SRC})
                    else setcondcode ({1'b0,RFILE[`SRC]});
                end
