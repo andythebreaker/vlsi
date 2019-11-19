@@ -1,0 +1,33 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Nov 19, 2019 at 21:05:44 CST
+ncverilog
+	+access+rwc
+	nplcpu.v
+Recompiling... reason: file './nplcpu.v' is newer than expected.
+	expected: Tue Nov 19 21:02:55 2019
+	actual:   Tue Nov 19 21:06:45 2019
+file: nplcpu.v
+	module worklib.instruction_set_model:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.instruction_set_model:v <0x1b1da8ad>
+			streams:   1, words:   729
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		          Instances  Unique
+		Modules:          1       1
+		Registers:       11      11
+		Initial blocks:   1       1
+	Writing initial simulation snapshot: worklib.instruction_set_model:v
+Loading snapshot worklib.instruction_set_model:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+===================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Nov 19, 2019 at 21:05:44 CST  (total: 00:00:00)

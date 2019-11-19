@@ -111,23 +111,25 @@ module instruction_set_model;
 // Parameter Declaration
 parameter      WIDTH 	      = 32 ;
 parameter      CYCLE 	      = 10 ;
-parameter      ADDRSIZE   	= 12 ;
-parameter      MAXREGS	    = 16 ;
-parameter      MEMSIZE	    = (1<<ADDRSIZE);
+parameter      ADDRSIZE       = 12 ;
+parameter      MAXREGS	      = 16 ;
+parameter      MEMSIZE	      = (1<<ADDRSIZE);
 
 // Register declarations
-reg [WIDTH-1:0]   	MEM[0:MEMSIZE-1],
-			    	        RFILE[0:MAXREGS-1],
-                  	ir,src1,src2;
-reg [WIDTH:0]    	  result ;
-reg [ADDRSIZE-1:0] 	pc ;
-reg [4:0]           psr;
-reg                 dir;
-reg                 reset;
+reg [WIDTH-1:0]        MEM[0:MEMSIZE-1],
+                       RFILE[0:MAXREGS-1],
+                       ir,src1,src2;
+reg [WIDTH:0]          result ;
+reg [ADDRSIZE-1:0]     pc ;
+reg [4:0]              psr;
+reg                    dir;
+reg                    reset;
 
-integer             i;
+integer                i;
 
-$display("%b",result)
+initial begin
+$display("===================\n%b",MEM[1]);
+end
 
 endmodule
 
