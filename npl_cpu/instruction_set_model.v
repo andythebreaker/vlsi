@@ -287,6 +287,7 @@ initial begin : prog_load
      $monitor("%d %d %h %h %h ",
               $time,pc,RFILE[0], RFILE[1], RFILE[2]) ;
      apply_reset ;
+     #200 $finish;
 end
 
 always begin : main_process
