@@ -53,16 +53,16 @@ integer           i;                    // useful for interactive debugging
 `define IMMTYPE 1
  // Define opcodes for each instruction
 
-`define NOP      4’b0000
-`define BRA      4’b0001
-`define LD       4’b0010
-`define STR      4’b0011
-`define ADD      4’b0100
-`define MUL      4’b0101
-`define CMP      4’b0110
-`define SHF      4’b0111
-`define ROT      4’b1000
-`define HLT      4’b1001
+`define NOP      4'b0000
+`define BRA      4'b0001
+`define LD       4'b0010
+`define STR      4'b0011
+`define ADD      4'b0100
+`define MUL      4'b0101
+`define CMP      4'b0110
+`define SHF      4'b0111
+`define ROT      4'b1000
+`define HLT      4'b1001
 
 // Define Condition Code fields
 `define CARRY  psr[0]
@@ -99,7 +99,7 @@ begin
       getdst = RFILE[`DST];
   end
   else begin // immediate type
-    $display(""Error:Immediate data can’t be destination. ");
+    $display(""Error:Immediate data can't be destination. ");
    end
 end
 endfunction
@@ -152,14 +152,14 @@ case(`OPCODE)
              clearcondcode ;
            if (`SRCTYPE) RFILE[`DST] = `SRC ;
         else RFILE[`DST]=MEM[`SRC] ;
-            setcondcode({1’bo,RFILE[`DST]}) ;
+            setcondcode({1'bo,RFILE[`DST]}) ;
                end
   `STR : begin
              clearcondcode    
               if (`SRCTYPE) MEM[`DST] = `SRC;
               else MEM[`DST] = RFILE[`SRC] ;
-                 if (`SRCTYPE) setcondcode({21’b0,`SRC})
-                   else setcondcode ({1’b0,RFILE[`SRC]});
+                 if (`SRCTYPE) setcondcode({21'b0,`SRC})
+                   else setcondcode ({1'b0,RFILE[`SRC]});
                end
   `ADD :  begin
                   clearcondcode ;
