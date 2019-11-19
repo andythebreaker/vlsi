@@ -1,0 +1,43 @@
+A reduced instruction set computer (RISC)
+====================================
+                                        +-----------------------------+
+                                        | processor                   |
+                                        | 12    32     5              |
+     clk------------------------------->| PC |  IR  | PSR             |
+                                        |                             |
+    / 32bits \                          |  +---------------+\         |
+   /+--------+                          |  | register      | 2^12     |
+    |        |  <-[12]-address(bus)---->|  | file          |          |
+2^12| memory |                          |  +---------------+/         |
+    |        |  <-[32]-data(bus)------->|                             |
+   \+--------+                          |  +==========+               |
+                                        |  |   ALU    |               |
+                                        |  +==========+               |
+                                        +-----------------------------+
+======================================
+problem:
+1) why memory = 2^12 = reg. file = 2^12
+======================================
+<!--10 instructions-->
+32-bit instruction register
+12-bit address register
+5-bit processor status register (PSR)
+33-bit computation results
+======================================
+Instructions
+Name      Mnemonic    Opcode    Format      (inst dst, src)
+NOP       NOP	        0         NOP
+BRANCH    BRA         1         BRA         mem, cc
+LOAD      LD          2         LD          reg, mem1
+
+
+  
+
+  
+
+
+
+
+
+
+
