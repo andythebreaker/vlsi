@@ -109,11 +109,11 @@ module instruction_set_model;
 
 /*Declaration for instruction set model*/
 // Parameter Declaration
-parameter      WIDTH 	      = 32 ;
-parameter      CYCLE 	      = 10 ;
+parameter      WIDTH          = 32 ;
+parameter      CYCLE          = 10 ;
 parameter      ADDRSIZE       = 12 ;
-parameter      MAXREGS	      = 16 ;
-parameter      MEMSIZE	      = (1<<ADDRSIZE);
+parameter      MAXREGS        = 16 ;
+parameter      MEMSIZE        = (1<<ADDRSIZE);
 
 // Register declarations
 reg [WIDTH-1:0]        MEM[0:MEMSIZE-1],
@@ -121,15 +121,53 @@ reg [WIDTH-1:0]        MEM[0:MEMSIZE-1],
                        ir,src1,src2;
 reg [WIDTH:0]          result ;
 reg [ADDRSIZE-1:0]     pc ;
-reg [4:0]              psr;
+reg [4:0]              psr;//Processor status register
 reg                    dir;
 reg                    reset;
 
 integer                i;
 
-initial begin
-$display("===================\n%b",MEM[1]);
+/*Defining symbolic names for bit-fields*/
+// Define Instruction fields
+‘define OPCODE    ir[31:28]
+‘define SRC       ir[23:12]
+‘define DST       ir[11:0]
+‘define SRCTYPE   ir[27]
+‘define DSTTYPE   ir[26]
+‘define CCODE     ir[27:24]//condition code   
+‘define SRCNT     ir[23:12]//shift/rotate count
+
+// Operand types
+‘define REGTYPE   0
+‘define IMMTYPE   1
+// Define opcodes for each instruction
+‘define NOP       4’b0000//0
+‘define BRA       4’b0001//1
+‘define LD        4’b0010//2
+‘define STR       4’b0011//3
+‘define ADD       4’b0100//4
+‘define MUL       4’b0101//5
+‘define CMP       4’b0110//6
+‘define SHF       4’b0111//7
+‘define ROT       4’b1000//8
+‘define HLT       4’b1001//9
+
+/*Initialization process*/
+task apply_reset;
+begin
+   reset = 1;
+   #CYCLE
+   reset = 0;
+   pc = 0;
 end
+endtask
+
+initial begin : prog_load
+ $readmemb(“sisc.prog”,MEM);
+ $monitor(“%d %d %h %h %h”, $time, pc,RFILE[0],RFILE[1], RFILE[2]);
+ apply_reset ;
+end
+   
 
 endmodule
 
