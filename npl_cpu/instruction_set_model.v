@@ -99,7 +99,7 @@ begin
       getdst = RFILE[`DST];
   end
   else begin // immediate type
-    $display(““Error:Immediate data can’t be destination.”);
+    $display(""Error:Immediate data can’t be destination. ");
    end
 end
 endfunction
@@ -215,10 +215,10 @@ case(`OPCODE)
              setcondcode(result);
            end
    `HLT : begin
-                $display(“Halt ... “);
+                $display("Halt ... ");
                 $stop ;
               end
-   default : $display (“Error : Illegal Opcode .” );
+   default : $display ("Error : Illegal Opcode . " );
 endcase
 end
 endtask
@@ -254,14 +254,14 @@ begin
    if (rm == `REGTYPE) begin
        while (adr2 >= adr1)
          begin
-               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+               $display("REGFILE[%d] = %d\n ",adr1,RFILE[adr1]);
                adr1 = adr1 +1;
          end
    end
 
    else begin
          while (adr2 >= adr1) begin  
-              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+              $display("MEM[%d]=%d\n ",adr1,MEM[adr1]);
               adr1= adr1 + 1;
          end
    end
@@ -271,8 +271,8 @@ endtask
 // Initial and always blocks
 
 initial begin : prog_load
-     $readmemb(“sisc.prog”,MEM);
-     $monitor(“%d %d %h %h %h”,
+     $readmemb("sisc.prog ",MEM);
+     $monitor("%d %d %h %h %h ",
      $time,pc,RFILE[0], RFILE[1]; RFILE[2]) ;
      apply_reset ;
 end
