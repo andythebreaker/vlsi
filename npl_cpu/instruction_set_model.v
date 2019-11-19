@@ -164,9 +164,15 @@ case(`OPCODE)
                        begin
                                 MEM[`DST] = RFILE[`SRC] ;
                        end
-                 if (`SRCTYPE) setcondcode({21'b0,`SRC})
-                   else setcondcode ({1'b0,RFILE[`SRC]});
-               end
+                 if (`SRCTYPE) 
+                          begin
+                                   setcondcode({21'b0,`SRC})
+                          end
+                                   else 
+                                            begin
+                                                     setcondcode({1'b0,RFILE[`SRC]});
+                                            end
+                                            end
   `ADD :  begin
                   clearcondcode ;
                   src1 = getsrc(ir);
