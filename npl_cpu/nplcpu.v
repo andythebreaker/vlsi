@@ -1,3 +1,4 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 A reduced instruction set computer (RISC)
 ====================================
                                         +-----------------------------+
@@ -16,9 +17,9 @@ A reduced instruction set computer (RISC)
                                         +-----------------------------+
 ======================================
 problem:
-1) why memory = 2^12 = reg. file = 2^12
-2) a+b=c [addr # = 3]?
-3) Condition codes  ??  Processor status register
+1*) why memory = 2^12 = reg. file = 2^12
+2*) a+b=c [addr # = 3]?
+3*) Condition codes  ??  Processor status register
 ======================================
 <!--10 instructions-->
 32-bit instruction register
@@ -71,15 +72,64 @@ P    Parity           PSR [2]
 Z    Zero             PSR [3]
 N    Negative         PSR [4]
 
+=============================================
+Outline of the CPU Module:
+module instruction_set_model;
 
+// general definitions
+// TRUE, FALSE, DEBUG-ON, etc
 
+// parameters
+// CYCLE, WIDTH, etc
 
+// declare memory,
+//    register file, ir,
+//    ALU registers
 
+// define instruction fields
+// define operand types
+// define opcode for each instruction
+// define condition code fields
+// define condition codes
 
+// functions for ALU operands and results
 
+// function/tasks for condition codes
 
+// main tasks
+// fetch, execution, write
+// initial and always
 
+// debugging help
 
+endmodule
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+module instruction_set_model;
+
+/*Declaration for instruction set model*/
+// Parameter Declaration
+parameter      WIDTH 	      = 32 ;
+parameter      CYCLE 	      = 10 ;
+parameter      ADDRSIZE   	= 12 ;
+parameter      MAXREGS	    = 16 ;
+parameter      MEMSIZE	    = (1<<ADDRSIZE);
+
+// Register declarations
+reg [WIDTH-1:0]   	MEM[0:MEMSIZE-1],
+			    	        RFILE[0:MAXREGS-1],
+                  	ir,src1,src2;
+reg [WIDTH:0]    	  result ;
+reg [ADDRSIZE-1:0] 	pc ;
+reg [4:0]           psr;
+reg                 dir;
+reg                 reset;
+
+integer             i;
+
+$display("%b",result)
+
+endmodule
 
   
 
