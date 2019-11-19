@@ -166,7 +166,7 @@ case(`OPCODE)
                        end
                  if (`SRCTYPE) 
                           begin
-                                   setcondcode({21'b0,`SRC})
+                                   setcondcode({21'b0,`SRC});
                           end
                                    else 
                                             begin
