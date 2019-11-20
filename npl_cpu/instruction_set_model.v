@@ -13,7 +13,12 @@ module instruction_set_model ;
 parameter  CYCLE=10 ;               // Cycle Time
 parameter  WIDTH=32 ;   // Width of data paths
 parameter  ADDRSIZE = 12 ;  // Size of address field
-parameter  MEMSIZE = (1<<ADDRSIZE); // Size of memory
+parameter  MEMSIZE = (1<<ADDRSIZE); // Size of memory (1<<ADDRSIZE=2^12)
+//==============================
+//1<<ADDRSIZE=4096
+//MEM[] length = 32
+//MEM[] height = 2^12
+//=============================
 parameter  MAXREGS = 16 ;  // Maximum # of registers
 parameter  SBITS = 5 ;                // Status register bits
 // Declare Registers and Memory
@@ -283,11 +288,10 @@ endtask
 // Initial and always blocks
 
 initial begin : prog_load
-     $readmemb("sisc.prog ",MEM);
+     $readmemb("sisc.prog",MEM);
      $monitor("%d %d %h %h %h ",
               $time,pc,RFILE[0], RFILE[1], RFILE[2]) ;
      apply_reset ;
-     #200 $finish;
 end
 
 always begin : main_process
