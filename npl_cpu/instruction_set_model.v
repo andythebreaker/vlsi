@@ -352,4 +352,10 @@ always begin : main_process
     end
     else #CYCLE ;
  end
+ initial
+ begin
+    $dumpfile("d.vcd");
+    $dumpvars;
+ end
+ 
  endmodule
