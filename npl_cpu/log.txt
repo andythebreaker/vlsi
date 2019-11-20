@@ -1,0 +1,1563 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+file: instruction_set_model.v
+‘define TRUE 1
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,34|0): non-printable character (0xe2) ignored.
+‘define TRUE 1
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,34|1): non-printable character (0x80) ignored.
+‘define TRUE 1
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,34|2): non-printable character (0x98) ignored.
+‘define TRUE 1
+               |
+ncvlog: *E,EXPLPA (instruction_set_model.v,34|15): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define FALSE 0 
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,35|0): non-printable character (0xe2) ignored.
+‘define FALSE 0 
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,35|1): non-printable character (0x80) ignored.
+‘define FALSE 0 
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,35|2): non-printable character (0x98) ignored.
+‘define FALSE 0 
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,35|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define FALSE 0 
+                |
+ncvlog: *E,EXPLPA (instruction_set_model.v,35|16): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DEBUG_ON  debug = 1
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,37|0): non-printable character (0xe2) ignored.
+‘define DEBUG_ON  debug = 1
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,37|1): non-printable character (0x80) ignored.
+‘define DEBUG_ON  debug = 1
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,37|2): non-printable character (0x98) ignored.
+‘define DEBUG_ON  debug = 1
+                 |
+ncvlog: *E,EXPLPA (instruction_set_model.v,37|17): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DEBUG_ON  debug = 1
+                        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,37|24): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DEBUG_ON  debug = 1
+                          |
+ncvlog: *E,EXPLPA (instruction_set_model.v,37|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DEBUG_OFF debug = 0
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,38|0): non-printable character (0xe2) ignored.
+‘define DEBUG_OFF debug = 0
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,38|1): non-printable character (0x80) ignored.
+‘define DEBUG_OFF debug = 0
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,38|2): non-printable character (0x98) ignored.
+‘define DEBUG_OFF debug = 0
+                  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,38|18): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DEBUG_OFF debug = 0
+                        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,38|24): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DEBUG_OFF debug = 0
+                          |
+ncvlog: *E,EXPLPA (instruction_set_model.v,38|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define OPCODE ir[31:28]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,42|0): non-printable character (0xe2) ignored.
+‘define OPCODE ir[31:28]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,42|1): non-printable character (0x80) ignored.
+‘define OPCODE ir[31:28]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,42|2): non-printable character (0x98) ignored.
+‘define OPCODE ir[31:28]
+               |
+ncvlog: *E,EXPLPA (instruction_set_model.v,42|15): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define OPCODE ir[31:28]
+                  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,42|18): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRC 	ir[23:12]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,43|0): non-printable character (0xe2) ignored.
+‘define SRC 	ir[23:12]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,43|1): non-printable character (0x80) ignored.
+‘define SRC 	ir[23:12]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,43|2): non-printable character (0x98) ignored.
+‘define SRC 	ir[23:12]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,43|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRC 	ir[23:12]
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,43|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRC 	ir[23:12]
+              	 |
+ncvlog: *E,EXPLPA (instruction_set_model.v,43|16): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DST 	 ir[11:0]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,44|0): non-printable character (0xe2) ignored.
+‘define DST 	 ir[11:0]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,44|1): non-printable character (0x80) ignored.
+‘define DST 	 ir[11:0]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,44|2): non-printable character (0x98) ignored.
+‘define DST 	 ir[11:0]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,44|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DST 	 ir[11:0]
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,44|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DST 	 ir[11:0]
+              	  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,44|17): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRCTYPE ir[27] // source type, 0=reg (mem for LD), 1=imm
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,45|0): non-printable character (0xe2) ignored.
+‘define SRCTYPE ir[27] // source type, 0=reg (mem for LD), 1=imm
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,45|1): non-printable character (0x80) ignored.
+‘define SRCTYPE ir[27] // source type, 0=reg (mem for LD), 1=imm
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,45|2): non-printable character (0x98) ignored.
+‘define SRCTYPE ir[27] // source type, 0=reg (mem for LD), 1=imm
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,45|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRCTYPE ir[27] // source type, 0=reg (mem for LD), 1=imm
+                |
+ncvlog: *E,EXPLPA (instruction_set_model.v,45|16): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRCTYPE ir[27] // source type, 0=reg (mem for LD), 1=imm
+                   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,45|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRCTYPE ir[27] // source type, 0=reg (mem for LD), 1=imm
+                       |
+ncvlog: *E,EXPCOL (instruction_set_model.v,45|23): expecting a colon (':') [3.2.1][3.8(IEEE)].
+‘define DSTTYPE ir[26] // destination type, 0=reg, 1=imm
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,46|0): non-printable character (0xe2) ignored.
+‘define DSTTYPE ir[26] // destination type, 0=reg, 1=imm
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,46|1): non-printable character (0x80) ignored.
+‘define DSTTYPE ir[26] // destination type, 0=reg, 1=imm
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,46|2): non-printable character (0x98) ignored.
+‘define DSTTYPE ir[26] // destination type, 0=reg, 1=imm
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,46|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DSTTYPE ir[26] // destination type, 0=reg, 1=imm
+                |
+ncvlog: *E,EXPLPA (instruction_set_model.v,46|16): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DSTTYPE ir[26] // destination type, 0=reg, 1=imm
+                   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,46|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define DSTTYPE ir[26] // destination type, 0=reg, 1=imm
+                       |
+ncvlog: *E,EXPCOL (instruction_set_model.v,46|23): expecting a colon (':') [3.2.1][3.8(IEEE)].
+‘define CCODE 	 ir[27:24]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,47|0): non-printable character (0xe2) ignored.
+‘define CCODE 	 ir[27:24]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,47|1): non-printable character (0x80) ignored.
+‘define CCODE 	 ir[27:24]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,47|2): non-printable character (0x98) ignored.
+‘define CCODE 	 ir[27:24]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,47|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCODE 	 ir[27:24]
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,47|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCODE 	 ir[27:24]
+                	  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,47|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRCNT 	 ir[23:12] // Shift/rotate count -= left, +=right
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,48|0): non-printable character (0xe2) ignored.
+‘define SRCNT 	 ir[23:12] // Shift/rotate count -= left, +=right
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,48|1): non-printable character (0x80) ignored.
+‘define SRCNT 	 ir[23:12] // Shift/rotate count -= left, +=right
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,48|2): non-printable character (0x98) ignored.
+‘define SRCNT 	 ir[23:12] // Shift/rotate count -= left, +=right
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,48|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRCNT 	 ir[23:12] // Shift/rotate count -= left, +=right
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,48|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SRCNT 	 ir[23:12] // Shift/rotate count -= left, +=right
+                	  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,48|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define REGTYPE 0
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,52|0): non-printable character (0xe2) ignored.
+‘define REGTYPE 0
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,52|1): non-printable character (0x80) ignored.
+‘define REGTYPE 0
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,52|2): non-printable character (0x98) ignored.
+‘define REGTYPE 0
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,52|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define REGTYPE 0
+                |
+ncvlog: *E,EXPLPA (instruction_set_model.v,52|16): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define REGTYPE 0
+                  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,52|18): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define IMMTYPE 1
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,53|0): non-printable character (0xe2) ignored.
+‘define IMMTYPE 1
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,53|1): non-printable character (0x80) ignored.
+‘define IMMTYPE 1
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,53|2): non-printable character (0x98) ignored.
+‘define IMMTYPE 1
+                |
+ncvlog: *E,EXPLPA (instruction_set_model.v,53|16): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define IMMTYPE 1
+                  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,53|18): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define NOP     	4’b0000
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,56|0): non-printable character (0xe2) ignored.
+‘define NOP     	4’b0000
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,56|1): non-printable character (0x80) ignored.
+‘define NOP     	4’b0000
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,56|2): non-printable character (0x98) ignored.
+‘define NOP     	4’b0000
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,56|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define NOP     	4’b0000
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,56|20): non-printable character (0xe2) ignored.
+‘define NOP     	4’b0000
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,56|21): non-printable character (0x80) ignored.
+‘define NOP     	4’b0000
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,56|22): non-printable character (0x99) ignored.
+‘define NOP     	4’b0000
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,56|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define BRA     	4’b0001
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,57|0): non-printable character (0xe2) ignored.
+‘define BRA     	4’b0001
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,57|1): non-printable character (0x80) ignored.
+‘define BRA     	4’b0001
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,57|2): non-printable character (0x98) ignored.
+‘define BRA     	4’b0001
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,57|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define BRA     	4’b0001
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,57|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define BRA     	4’b0001
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,57|20): non-printable character (0xe2) ignored.
+‘define BRA     	4’b0001
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,57|21): non-printable character (0x80) ignored.
+‘define BRA     	4’b0001
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,57|22): non-printable character (0x99) ignored.
+‘define BRA     	4’b0001
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,57|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define LD      	4’b0010
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,58|0): non-printable character (0xe2) ignored.
+‘define LD      	4’b0010
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,58|1): non-printable character (0x80) ignored.
+‘define LD      	4’b0010
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,58|2): non-printable character (0x98) ignored.
+‘define LD      	4’b0010
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,58|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define LD      	4’b0010
+           |
+ncvlog: *E,EXPLPA (instruction_set_model.v,58|11): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define LD      	4’b0010
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,58|20): non-printable character (0xe2) ignored.
+‘define LD      	4’b0010
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,58|21): non-printable character (0x80) ignored.
+‘define LD      	4’b0010
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,58|22): non-printable character (0x99) ignored.
+‘define LD      	4’b0010
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,58|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define STR     	4’b0011
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,59|0): non-printable character (0xe2) ignored.
+‘define STR     	4’b0011
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,59|1): non-printable character (0x80) ignored.
+‘define STR     	4’b0011
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,59|2): non-printable character (0x98) ignored.
+‘define STR     	4’b0011
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,59|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define STR     	4’b0011
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,59|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define STR     	4’b0011
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,59|20): non-printable character (0xe2) ignored.
+‘define STR     	4’b0011
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,59|21): non-printable character (0x80) ignored.
+‘define STR     	4’b0011
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,59|22): non-printable character (0x99) ignored.
+‘define STR     	4’b0011
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,59|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ADD     	4’b0100
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,60|0): non-printable character (0xe2) ignored.
+‘define ADD     	4’b0100
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,60|1): non-printable character (0x80) ignored.
+‘define ADD     	4’b0100
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,60|2): non-printable character (0x98) ignored.
+‘define ADD     	4’b0100
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,60|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ADD     	4’b0100
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,60|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ADD     	4’b0100
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,60|20): non-printable character (0xe2) ignored.
+‘define ADD     	4’b0100
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,60|21): non-printable character (0x80) ignored.
+‘define ADD     	4’b0100
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,60|22): non-printable character (0x99) ignored.
+‘define ADD     	4’b0100
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,60|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define MUL     	4’b0101
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,61|0): non-printable character (0xe2) ignored.
+‘define MUL     	4’b0101
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,61|1): non-printable character (0x80) ignored.
+‘define MUL     	4’b0101
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,61|2): non-printable character (0x98) ignored.
+‘define MUL     	4’b0101
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,61|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define MUL     	4’b0101
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,61|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define MUL     	4’b0101
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,61|20): non-printable character (0xe2) ignored.
+‘define MUL     	4’b0101
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,61|21): non-printable character (0x80) ignored.
+‘define MUL     	4’b0101
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,61|22): non-printable character (0x99) ignored.
+‘define MUL     	4’b0101
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,61|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CMP     	4’b0110
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,62|0): non-printable character (0xe2) ignored.
+‘define CMP     	4’b0110
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,62|1): non-printable character (0x80) ignored.
+‘define CMP     	4’b0110
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,62|2): non-printable character (0x98) ignored.
+‘define CMP     	4’b0110
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,62|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CMP     	4’b0110
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,62|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CMP     	4’b0110
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,62|20): non-printable character (0xe2) ignored.
+‘define CMP     	4’b0110
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,62|21): non-printable character (0x80) ignored.
+‘define CMP     	4’b0110
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,62|22): non-printable character (0x99) ignored.
+‘define CMP     	4’b0110
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,62|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SHF     	4’b0111
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,63|0): non-printable character (0xe2) ignored.
+‘define SHF     	4’b0111
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,63|1): non-printable character (0x80) ignored.
+‘define SHF     	4’b0111
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,63|2): non-printable character (0x98) ignored.
+‘define SHF     	4’b0111
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,63|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SHF     	4’b0111
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,63|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define SHF     	4’b0111
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,63|20): non-printable character (0xe2) ignored.
+‘define SHF     	4’b0111
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,63|21): non-printable character (0x80) ignored.
+‘define SHF     	4’b0111
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,63|22): non-printable character (0x99) ignored.
+‘define SHF     	4’b0111
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,63|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ROT     	4’b1000
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,64|0): non-printable character (0xe2) ignored.
+‘define ROT     	4’b1000
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,64|1): non-printable character (0x80) ignored.
+‘define ROT     	4’b1000
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,64|2): non-printable character (0x98) ignored.
+‘define ROT     	4’b1000
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,64|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ROT     	4’b1000
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,64|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ROT     	4’b1000
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,64|20): non-printable character (0xe2) ignored.
+‘define ROT     	4’b1000
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,64|21): non-printable character (0x80) ignored.
+‘define ROT     	4’b1000
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,64|22): non-printable character (0x99) ignored.
+‘define ROT     	4’b1000
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,64|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define HLT     	4’b1001
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,65|0): non-printable character (0xe2) ignored.
+‘define HLT     	4’b1001
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,65|1): non-printable character (0x80) ignored.
+‘define HLT     	4’b1001
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,65|2): non-printable character (0x98) ignored.
+‘define HLT     	4’b1001
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,65|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define HLT     	4’b1001
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,65|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define HLT     	4’b1001
+                  	 |
+ncvlog: *W,NONPRT (instruction_set_model.v,65|20): non-printable character (0xe2) ignored.
+‘define HLT     	4’b1001
+                  	  |
+ncvlog: *W,NONPRT (instruction_set_model.v,65|21): non-printable character (0x80) ignored.
+‘define HLT     	4’b1001
+                  	   |
+ncvlog: *W,NONPRT (instruction_set_model.v,65|22): non-printable character (0x99) ignored.
+‘define HLT     	4’b1001
+                  	   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,65|22): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CARRY 	psr[0]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,68|0): non-printable character (0xe2) ignored.
+‘define CARRY 	psr[0]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,68|1): non-printable character (0x80) ignored.
+‘define CARRY 	psr[0]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,68|2): non-printable character (0x98) ignored.
+‘define CARRY 	psr[0]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,68|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CARRY 	psr[0]
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,68|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CARRY 	psr[0]
+                	  |
+ncvlog: *E,EXPLPA (instruction_set_model.v,68|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CARRY 	psr[0]
+                	     |
+ncvlog: *E,EXPCOL (instruction_set_model.v,68|22): expecting a colon (':') [3.2.1][3.8(IEEE)].
+‘define EVEN   psr[1]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,69|0): non-printable character (0xe2) ignored.
+‘define EVEN   psr[1]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,69|1): non-printable character (0x80) ignored.
+‘define EVEN   psr[1]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,69|2): non-printable character (0x98) ignored.
+‘define EVEN   psr[1]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,69|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define EVEN   psr[1]
+             |
+ncvlog: *E,EXPLPA (instruction_set_model.v,69|13): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define EVEN   psr[1]
+                   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,69|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define EVEN   psr[1]
+                      |
+ncvlog: *E,EXPCOL (instruction_set_model.v,69|22): expecting a colon (':') [3.2.1][3.8(IEEE)].
+‘define PARITY psr[2]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,70|0): non-printable character (0xe2) ignored.
+‘define PARITY psr[2]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,70|1): non-printable character (0x80) ignored.
+‘define PARITY psr[2]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,70|2): non-printable character (0x98) ignored.
+‘define PARITY psr[2]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,70|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define PARITY psr[2]
+               |
+ncvlog: *E,EXPLPA (instruction_set_model.v,70|15): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define PARITY psr[2]
+                   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,70|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define PARITY psr[2]
+                      |
+ncvlog: *E,EXPCOL (instruction_set_model.v,70|22): expecting a colon (':') [3.2.1][3.8(IEEE)].
+‘define ZERO   psr[3]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,71|0): non-printable character (0xe2) ignored.
+‘define ZERO   psr[3]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,71|1): non-printable character (0x80) ignored.
+‘define ZERO   psr[3]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,71|2): non-printable character (0x98) ignored.
+‘define ZERO   psr[3]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,71|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ZERO   psr[3]
+             |
+ncvlog: *E,EXPLPA (instruction_set_model.v,71|13): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ZERO   psr[3]
+                   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,71|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define ZERO   psr[3]
+                      |
+ncvlog: *E,EXPCOL (instruction_set_model.v,71|22): expecting a colon (':') [3.2.1][3.8(IEEE)].
+‘define NEG    psr[4]
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,72|0): non-printable character (0xe2) ignored.
+‘define NEG    psr[4]
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,72|1): non-printable character (0x80) ignored.
+‘define NEG    psr[4]
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,72|2): non-printable character (0x98) ignored.
+‘define NEG    psr[4]
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,72|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define NEG    psr[4]
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,72|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define NEG    psr[4]
+                   |
+ncvlog: *E,EXPLPA (instruction_set_model.v,72|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define NEG    psr[4]
+                      |
+ncvlog: *E,EXPCOL (instruction_set_model.v,72|22): expecting a colon (':') [3.2.1][3.8(IEEE)].
+‘define CCC 1   // Result has carry
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,75|0): non-printable character (0xe2) ignored.
+‘define CCC 1   // Result has carry
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,75|1): non-printable character (0x80) ignored.
+‘define CCC 1   // Result has carry
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,75|2): non-printable character (0x98) ignored.
+‘define CCC 1   // Result has carry
+        |
+ncvlog: *E,EXPLPA (instruction_set_model.v,75|8): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCC 1   // Result has carry
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,75|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCC 1   // Result has carry
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,75|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCE 2   // Result is even
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,76|0): non-printable character (0xe2) ignored.
+‘define CCE 2   // Result is even
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,76|1): non-printable character (0x80) ignored.
+‘define CCE 2   // Result is even
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,76|2): non-printable character (0x98) ignored.
+‘define CCE 2   // Result is even
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,76|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCE 2   // Result is even
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,76|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCP 3   // Result is odd parity
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,77|0): non-printable character (0xe2) ignored.
+‘define CCP 3   // Result is odd parity
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,77|1): non-printable character (0x80) ignored.
+‘define CCP 3   // Result is odd parity
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,77|2): non-printable character (0x98) ignored.
+‘define CCP 3   // Result is odd parity
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,77|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCP 3   // Result is odd parity
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,77|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCZ 4   // Result is Zero
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,78|0): non-printable character (0xe2) ignored.
+‘define CCZ 4   // Result is Zero
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,78|1): non-printable character (0x80) ignored.
+‘define CCZ 4   // Result is Zero
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,78|2): non-printable character (0x98) ignored.
+‘define CCZ 4   // Result is Zero
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,78|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCZ 4   // Result is Zero
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,78|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCN 5   // Result is Negative
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,79|0): non-printable character (0xe2) ignored.
+‘define CCN 5   // Result is Negative
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,79|1): non-printable character (0x80) ignored.
+‘define CCN 5   // Result is Negative
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,79|2): non-printable character (0x98) ignored.
+‘define CCN 5   // Result is Negative
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,79|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCN 5   // Result is Negative
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,79|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCA 0   // Always
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,80|0): non-printable character (0xe2) ignored.
+‘define CCA 0   // Always
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,80|1): non-printable character (0x80) ignored.
+‘define CCA 0   // Always
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,80|2): non-printable character (0x98) ignored.
+‘define CCA 0   // Always
+            |
+ncvlog: *E,EXPLPA (instruction_set_model.v,80|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define CCA 0   // Always
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,80|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define RIGHT  0 // Rotate/Shift Right
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,82|0): non-printable character (0xe2) ignored.
+‘define RIGHT  0 // Rotate/Shift Right
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,82|1): non-printable character (0x80) ignored.
+‘define RIGHT  0 // Rotate/Shift Right
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,82|2): non-printable character (0x98) ignored.
+‘define RIGHT  0 // Rotate/Shift Right
+              |
+ncvlog: *E,EXPLPA (instruction_set_model.v,82|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define RIGHT  0 // Rotate/Shift Right
+                 |
+ncvlog: *E,EXPLPA (instruction_set_model.v,82|17): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define LEFT   1 // Rotate/Shift Left
+|
+ncvlog: *W,NONPRT (instruction_set_model.v,83|0): non-printable character (0xe2) ignored.
+‘define LEFT   1 // Rotate/Shift Left
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,83|1): non-printable character (0x80) ignored.
+‘define LEFT   1 // Rotate/Shift Left
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,83|2): non-printable character (0x98) ignored.
+‘define LEFT   1 // Rotate/Shift Left
+             |
+ncvlog: *E,EXPLPA (instruction_set_model.v,83|13): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+‘define LEFT   1 // Rotate/Shift Left
+                 |
+ncvlog: *E,EXPLPA (instruction_set_model.v,83|17): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|7): non-printable character (0xe2) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+        |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|8): non-printable character (0x80) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+         |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|9): non-printable character (0x98) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|21): non-printable character (0xe2) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|22): non-printable character (0x80) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|23): non-printable character (0x98) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+                                                |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|48): non-printable character (0xe2) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+                                                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|49): non-printable character (0x80) ignored.
+   if (‘SRCTYPE == ‘REGTYPE) getsrc = RFILE[‘SRC] ;
+                                                  |
+ncvlog: *W,NONPRT (instruction_set_model.v,90|50): non-printable character (0x98) ignored.
+   else getsrc = ‘SRC ;   // immediate type
+                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,91|17): non-printable character (0xe2) ignored.
+   else getsrc = ‘SRC ;   // immediate type
+                  |
+ncvlog: *W,NONPRT (instruction_set_model.v,91|18): non-printable character (0x80) ignored.
+   else getsrc = ‘SRC ;   // immediate type
+                   |
+ncvlog: *W,NONPRT (instruction_set_model.v,91|19): non-printable character (0x98) ignored.
+   if (‘DSTTYPE == ‘REGTYPE) begin
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,98|7): non-printable character (0xe2) ignored.
+   if (‘DSTTYPE == ‘REGTYPE) begin
+        |
+ncvlog: *W,NONPRT (instruction_set_model.v,98|8): non-printable character (0x80) ignored.
+   if (‘DSTTYPE == ‘REGTYPE) begin
+         |
+ncvlog: *W,NONPRT (instruction_set_model.v,98|9): non-printable character (0x98) ignored.
+   if (‘DSTTYPE == ‘REGTYPE) begin
+                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,98|21): non-printable character (0xe2) ignored.
+   if (‘DSTTYPE == ‘REGTYPE) begin
+                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,98|22): non-printable character (0x80) ignored.
+   if (‘DSTTYPE == ‘REGTYPE) begin
+                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,98|23): non-printable character (0x98) ignored.
+      getdst = RFILE[‘DST];
+                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,99|21): non-printable character (0xe2) ignored.
+      getdst = RFILE[‘DST];
+                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,99|22): non-printable character (0x80) ignored.
+      getdst = RFILE[‘DST];
+                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,99|23): non-printable character (0x98) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+             |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|13): non-printable character (0xe2) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+              |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|14): non-printable character (0x80) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+               |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|15): non-printable character (0x9c) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|16): non-printable character (0xe2) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|17): non-printable character (0x80) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                  |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|18): non-printable character (0x9c) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                        |
+ncvlog: *E,EXPRPA (instruction_set_model.v,102|24): expecting a right parenthesis (')') [10.2.2][14(IEEE)].
+    $display(““Error:Immediate data can’t be destination.”);
+                                      |
+ncvlog: *E,MISEXX (instruction_set_model.v,102|38): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+    $display(““Error:Immediate data can’t be destination.”);
+                                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|43): non-printable character (0xe2) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|44): non-printable character (0x80) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|45): non-printable character (0x99) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                                              |
+ncvlog: *E,MISEXX (instruction_set_model.v,102|46): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+    $display(““Error:Immediate data can’t be destination.”);
+                                                 |
+ncvlog: *E,MISEXX (instruction_set_model.v,102|49): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+    $display(““Error:Immediate data can’t be destination.”);
+                                                             |
+ncvlog: *E,MISEXX (instruction_set_model.v,102|61): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+    $display(““Error:Immediate data can’t be destination.”);
+                                                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|63): non-printable character (0xe2) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                                                                |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|64): non-printable character (0x80) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                                                                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,102|65): non-printable character (0x9d) ignored.
+    $display(““Error:Immediate data can’t be destination.”);
+                                                                  |
+ncvlog: *E,NKDDOT (instruction_set_model.v,102|66): character immediately after a period ('.') does not start an identifier [12.4.1(IEEE)].
+    $display(““Error:Immediate data can’t be destination.”);
+                                                                  |
+ncvlog: *E,MISEXX (instruction_set_model.v,102|66): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+    $display(““Error:Immediate data can’t be destination.”);
+                                                                   |
+ncvlog: *E,NOTSTT (instruction_set_model.v,102|67): expecting a statement [9(IEEE)].
+     ‘CCC : checkcond =  ‘CARRY ;
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,113|5): non-printable character (0xe2) ignored.
+     ‘CCC : checkcond =  ‘CARRY ;
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,113|6): non-printable character (0x80) ignored.
+     ‘CCC : checkcond =  ‘CARRY ;
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,113|7): non-printable character (0x98) ignored.
+     ‘CCC : checkcond =  ‘CARRY ;
+                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,113|27): non-printable character (0xe2) ignored.
+     ‘CCC : checkcond =  ‘CARRY ;
+                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,113|28): non-printable character (0x80) ignored.
+     ‘CCC : checkcond =  ‘CARRY ;
+                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,113|29): non-printable character (0x98) ignored.
+     ‘CCE : checkcond =  ‘EVEN ;
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,114|5): non-printable character (0xe2) ignored.
+     ‘CCE : checkcond =  ‘EVEN ;
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,114|6): non-printable character (0x80) ignored.
+     ‘CCE : checkcond =  ‘EVEN ;
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,114|7): non-printable character (0x98) ignored.
+     ‘CCE : checkcond =  ‘EVEN ;
+                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,114|27): non-printable character (0xe2) ignored.
+     ‘CCE : checkcond =  ‘EVEN ;
+                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,114|28): non-printable character (0x80) ignored.
+     ‘CCE : checkcond =  ‘EVEN ;
+                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,114|29): non-printable character (0x98) ignored.
+     ‘CCP : checkcond =  ‘PARITY ;
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,115|5): non-printable character (0xe2) ignored.
+     ‘CCP : checkcond =  ‘PARITY ;
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,115|6): non-printable character (0x80) ignored.
+     ‘CCP : checkcond =  ‘PARITY ;
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,115|7): non-printable character (0x98) ignored.
+     ‘CCP : checkcond =  ‘PARITY ;
+                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,115|27): non-printable character (0xe2) ignored.
+     ‘CCP : checkcond =  ‘PARITY ;
+                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,115|28): non-printable character (0x80) ignored.
+     ‘CCP : checkcond =  ‘PARITY ;
+                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,115|29): non-printable character (0x98) ignored.
+     ‘CCZ : checkcond =  ‘ZERO ;
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,116|5): non-printable character (0xe2) ignored.
+     ‘CCZ : checkcond =  ‘ZERO ;
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,116|6): non-printable character (0x80) ignored.
+     ‘CCZ : checkcond =  ‘ZERO ;
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,116|7): non-printable character (0x98) ignored.
+     ‘CCZ : checkcond =  ‘ZERO ;
+                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,116|27): non-printable character (0xe2) ignored.
+     ‘CCZ : checkcond =  ‘ZERO ;
+                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,116|28): non-printable character (0x80) ignored.
+     ‘CCZ : checkcond =  ‘ZERO ;
+                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,116|29): non-printable character (0x98) ignored.
+     ‘CCN : chedkcond =  ‘NEG ;
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,117|5): non-printable character (0xe2) ignored.
+     ‘CCN : chedkcond =  ‘NEG ;
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,117|6): non-printable character (0x80) ignored.
+     ‘CCN : chedkcond =  ‘NEG ;
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,117|7): non-printable character (0x98) ignored.
+     ‘CCN : chedkcond =  ‘NEG ;
+                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,117|27): non-printable character (0xe2) ignored.
+     ‘CCN : chedkcond =  ‘NEG ;
+                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,117|28): non-printable character (0x80) ignored.
+     ‘CCN : chedkcond =  ‘NEG ;
+                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,117|29): non-printable character (0x98) ignored.
+     ‘CCA : checkcond =  1; 
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,118|5): non-printable character (0xe2) ignored.
+     ‘CCA : checkcond =  1; 
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,118|6): non-printable character (0x80) ignored.
+     ‘CCA : checkcond =  1; 
+       |
+ncvlog: *W,NONPRT (instruction_set_model.v,118|7): non-printable character (0x98) ignored.
+   ‘CARRY  = res[WIDTH];
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,131|3): non-printable character (0xe2) ignored.
+   ‘CARRY  = res[WIDTH];
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,131|4): non-printable character (0x80) ignored.
+   ‘CARRY  = res[WIDTH];
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,131|5): non-printable character (0x98) ignored.
+   ‘EVEN   = ~res[0];
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,132|3): non-printable character (0xe2) ignored.
+   ‘EVEN   = ~res[0];
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,132|4): non-printable character (0x80) ignored.
+   ‘EVEN   = ~res[0];
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,132|5): non-printable character (0x98) ignored.
+   ‘PARITY =  ^res ;
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,133|3): non-printable character (0xe2) ignored.
+   ‘PARITY =  ^res ;
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,133|4): non-printable character (0x80) ignored.
+   ‘PARITY =  ^res ;
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,133|5): non-printable character (0x98) ignored.
+   ‘ZERO   = ~(|res) ;
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,134|3): non-printable character (0xe2) ignored.
+   ‘ZERO   = ~(|res) ;
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,134|4): non-printable character (0x80) ignored.
+   ‘ZERO   = ~(|res) ;
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,134|5): non-printable character (0x98) ignored.
+   ‘NEG    = res[WIDTH-1];
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,135|3): non-printable character (0xe2) ignored.
+   ‘NEG    = res[WIDTH-1];
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,135|4): non-printable character (0x80) ignored.
+   ‘NEG    = res[WIDTH-1];
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,135|5): non-printable character (0x98) ignored.
+case(`OPCODE)
+           |
+ncvlog: *E,NOTDIR (instruction_set_model.v,148|11): `OPCODE: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+case(`OPCODE)
+            |
+ncvlog: *E,ILLPRI (instruction_set_model.v,148|12): illegal expression primary [4.2(IEEE)].
+  ‘NOP : ;
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,149|2): non-printable character (0xe2) ignored.
+  ‘NOP : ;
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,149|3): non-printable character (0x80) ignored.
+  ‘NOP : ;
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,149|4): non-printable character (0x98) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|2): non-printable character (0xe2) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|3): non-printable character (0x80) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|4): non-printable character (0x98) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+          	               |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|26): non-printable character (0xe2) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+          	                |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|27): non-printable character (0x80) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+          	                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|28): non-printable character (0x98) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+          	                                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|48): non-printable character (0xe2) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+          	                                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|49): non-printable character (0x80) ignored.
+  ‘BRA :	if (checkcond( ‘CCODE)  == 1) pc = ‘DST;
+          	                                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,150|50): non-printable character (0x98) ignored.
+  ‘LD : 	begin  
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,151|2): non-printable character (0xe2) ignored.
+  ‘LD : 	begin  
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,151|3): non-printable character (0x80) ignored.
+  ‘LD : 	begin  
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,151|4): non-printable character (0x98) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	        |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|15): non-printable character (0xe2) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	         |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|16): non-printable character (0x80) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	          |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|17): non-printable character (0x98) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	                          |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|33): non-printable character (0xe2) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|34): non-printable character (0x80) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|35): non-printable character (0x98) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	                                    |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|43): non-printable character (0xe2) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	                                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|44): non-printable character (0x80) ignored.
+	     	    if (‘SRCTYPE) RFILE[‘DST] = ‘SRC ;
+	     	                                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,153|45): non-printable character (0x98) ignored.
+  		    else RFILE[‘DST]=MEM[‘SRC] ;
+  		               |
+ncvlog: *W,NONPRT (instruction_set_model.v,154|19): non-printable character (0xe2) ignored.
+  		    else RFILE[‘DST]=MEM[‘SRC] ;
+  		                |
+ncvlog: *W,NONPRT (instruction_set_model.v,154|20): non-printable character (0x80) ignored.
+  		    else RFILE[‘DST]=MEM[‘SRC] ;
+  		                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,154|21): non-printable character (0x98) ignored.
+  		    else RFILE[‘DST]=MEM[‘SRC] ;
+  		                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,154|31): non-printable character (0xe2) ignored.
+  		    else RFILE[‘DST]=MEM[‘SRC] ;
+  		                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,154|32): non-printable character (0x80) ignored.
+  		    else RFILE[‘DST]=MEM[‘SRC] ;
+  		                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,154|33): non-printable character (0x98) ignored.
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                  |
+ncvlog: *W,NONPRT (instruction_set_model.v,155|26): non-printable character (0xe2) ignored.
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                   |
+ncvlog: *W,NONPRT (instruction_set_model.v,155|27): non-printable character (0x80) ignored.
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                    |
+ncvlog: *W,NONPRT (instruction_set_model.v,155|28): non-printable character (0x99) ignored.
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                      |
+ncvlog: *E,BADCON (instruction_set_model.v,155|30): illegal concatenation syntax [4.1.14(IEEE)].
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                              |
+ncvlog: *W,NONPRT (instruction_set_model.v,155|38): non-printable character (0xe2) ignored.
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,155|39): non-printable character (0x80) ignored.
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                                |
+ncvlog: *W,NONPRT (instruction_set_model.v,155|40): non-printable character (0x98) ignored.
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                                     |
+ncvlog: *E,EXPRPA (instruction_set_model.v,155|45): expecting a right parenthesis (')') [10.2.2(IEEE)].
+       	    setcondcode({1’bo,RFILE[‘DST]}) ;
+       	                                        |
+ncvlog: *E,NOTSTT (instruction_set_model.v,155|48): expecting a statement [9(IEEE)].
+  ‘STR :	begin
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,157|2): non-printable character (0xe2) ignored.
+  ‘STR :	begin
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,157|3): non-printable character (0x80) ignored.
+  ‘STR :	begin
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,157|4): non-printable character (0x98) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	     |
+ncvlog: *E,MISEXX (instruction_set_model.v,159|15): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	        |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|18): non-printable character (0xe2) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	         |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|19): non-printable character (0x80) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	          |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|20): non-printable character (0x98) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|34): non-printable character (0xe2) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|35): non-printable character (0x80) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	                          |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|36): non-printable character (0x98) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	                                  |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|44): non-printable character (0xe2) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	                                   |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|45): non-printable character (0x80) ignored.
+         	    if (‘SRCTYPE) MEM[‘DST] = ‘SRC;
+         	                                    |
+ncvlog: *W,NONPRT (instruction_set_model.v,159|46): non-printable character (0x98) ignored.
+         	    else MEM[‘DST] = RFILE[‘SRC] ;
+         	             |
+ncvlog: *W,NONPRT (instruction_set_model.v,160|23): non-printable character (0xe2) ignored.
+         	    else MEM[‘DST] = RFILE[‘SRC] ;
+         	              |
+ncvlog: *W,NONPRT (instruction_set_model.v,160|24): non-printable character (0x80) ignored.
+         	    else MEM[‘DST] = RFILE[‘SRC] ;
+         	               |
+ncvlog: *W,NONPRT (instruction_set_model.v,160|25): non-printable character (0x98) ignored.
+         	    else MEM[‘DST] = RFILE[‘SRC] ;
+         	                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,160|39): non-printable character (0xe2) ignored.
+         	    else MEM[‘DST] = RFILE[‘SRC] ;
+         	                              |
+ncvlog: *W,NONPRT (instruction_set_model.v,160|40): non-printable character (0x80) ignored.
+         	    else MEM[‘DST] = RFILE[‘SRC] ;
+         	                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,160|41): non-printable character (0x98) ignored.
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                    |
+ncvlog: *W,NONPRT (instruction_set_model.v,161|21): non-printable character (0xe2) ignored.
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,161|22): non-printable character (0x80) ignored.
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,161|23): non-printable character (0x98) ignored.
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,161|48): non-printable character (0xe2) ignored.
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                                                |
+ncvlog: *W,NONPRT (instruction_set_model.v,161|49): non-printable character (0x80) ignored.
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                                                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,161|50): non-printable character (0x99) ignored.
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                                                   |
+ncvlog: *E,BADCON (instruction_set_model.v,161|52): illegal concatenation syntax [4.1.14(IEEE)].
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                                                        |
+ncvlog: *E,NOTDIR (instruction_set_model.v,161|57): `SRC: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+	                if (‘SRCTYPE) setcondcode({21’b0,`SRC})
+	                                                         |
+ncvlog: *E,ILLPRI (instruction_set_model.v,161|58): illegal expression primary [4.2(IEEE)].
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                      |
+ncvlog: *E,EXPSMC (instruction_set_model.v,162|22): expecting a semicolon (';') [10.2.2][10.2(IEEE)].
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,162|39): non-printable character (0xe2) ignored.
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,162|40): non-printable character (0x80) ignored.
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,162|41): non-printable character (0x99) ignored.
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                           |
+ncvlog: *E,BADCON (instruction_set_model.v,162|43): illegal concatenation syntax [4.1.14(IEEE)].
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                                   |
+ncvlog: *W,NONPRT (instruction_set_model.v,162|51): non-printable character (0xe2) ignored.
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                                    |
+ncvlog: *W,NONPRT (instruction_set_model.v,162|52): non-printable character (0x80) ignored.
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,162|53): non-printable character (0x98) ignored.
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                                          |
+ncvlog: *E,EXPRPA (instruction_set_model.v,162|58): expecting a right parenthesis (')') [10.2.2(IEEE)].
+                   else setcondcode ({1’b0,RFILE[‘SRC]});
+                                                            |
+ncvlog: *E,NOTSTT (instruction_set_model.v,162|60): expecting a statement [9(IEEE)].
+  ‘ADD :  begin
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,164|2): non-printable character (0xe2) ignored.
+  ‘ADD :  begin
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,164|3): non-printable character (0x80) ignored.
+  ‘ADD :  begin
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,164|4): non-printable character (0x98) ignored.
+    ‘MUL : begin
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,175|4): non-printable character (0xe2) ignored.
+    ‘MUL : begin
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,175|5): non-printable character (0x80) ignored.
+    ‘MUL : begin
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,175|6): non-printable character (0x98) ignored.
+    ‘CMP : begin
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,182|4): non-printable character (0xe2) ignored.
+    ‘CMP : begin
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,182|5): non-printable character (0x80) ignored.
+    ‘CMP : begin
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,182|6): non-printable character (0x98) ignored.
+    ‘SHF : begin
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,188|4): non-printable character (0xe2) ignored.
+    ‘SHF : begin
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,188|5): non-printable character (0x80) ignored.
+    ‘SHF : begin
+      |
+ncvlog: *W,NONPRT (instruction_set_model.v,188|6): non-printable character (0x98) ignored.
+ ‘ROT : begin
+ |
+ncvlog: *W,NONPRT (instruction_set_model.v,197|1): non-printable character (0xe2) ignored.
+ ‘ROT : begin
+  |
+ncvlog: *W,NONPRT (instruction_set_model.v,197|2): non-printable character (0x80) ignored.
+ ‘ROT : begin
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,197|3): non-printable character (0x98) ignored.
+               dir = (src1[ADDRSIZE-1] >=0 ? ‘RIGHT : ‘LEFT ;
+                                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,201|45): non-printable character (0xe2) ignored.
+               dir = (src1[ADDRSIZE-1] >=0 ? ‘RIGHT : ‘LEFT ;
+                                              |
+ncvlog: *W,NONPRT (instruction_set_model.v,201|46): non-printable character (0x80) ignored.
+               dir = (src1[ADDRSIZE-1] >=0 ? ‘RIGHT : ‘LEFT ;
+                                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,201|47): non-printable character (0x98) ignored.
+               dir = (src1[ADDRSIZE-1] >=0 ? ‘RIGHT : ‘LEFT ;
+                                                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,201|56): non-printable character (0xe2) ignored.
+               dir = (src1[ADDRSIZE-1] >=0 ? ‘RIGHT : ‘LEFT ;
+                                                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,201|57): non-printable character (0x80) ignored.
+               dir = (src1[ADDRSIZE-1] >=0 ? ‘RIGHT : ‘LEFT ;
+                                                          |
+ncvlog: *W,NONPRT (instruction_set_model.v,201|58): non-printable character (0x98) ignored.
+               dir = (src1[ADDRSIZE-1] >=0 ? ‘RIGHT : ‘LEFT ;
+                                                                |
+ncvlog: *E,EXPRPA (instruction_set_model.v,201|64): expecting a right parenthesis (')') [4.3][9.7(IEEE)].
+		    if (dir == ‘RIGHT) begin
+		               |
+ncvlog: *W,NONPRT (instruction_set_model.v,204|17): non-printable character (0xe2) ignored.
+		    if (dir == ‘RIGHT) begin
+		                |
+ncvlog: *W,NONPRT (instruction_set_model.v,204|18): non-printable character (0x80) ignored.
+		    if (dir == ‘RIGHT) begin
+		                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,204|19): non-printable character (0x98) ignored.
+   ‘HLT : begin
+   |
+ncvlog: *W,NONPRT (instruction_set_model.v,217|3): non-printable character (0xe2) ignored.
+   ‘HLT : begin
+    |
+ncvlog: *W,NONPRT (instruction_set_model.v,217|4): non-printable character (0x80) ignored.
+   ‘HLT : begin
+     |
+ncvlog: *W,NONPRT (instruction_set_model.v,217|5): non-printable character (0x98) ignored.
+                $display(“Halt ... “);
+                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,218|25): non-printable character (0xe2) ignored.
+                $display(“Halt ... “);
+                          |
+ncvlog: *W,NONPRT (instruction_set_model.v,218|26): non-printable character (0x80) ignored.
+                $display(“Halt ... “);
+                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,218|27): non-printable character (0x9c) ignored.
+                $display(“Halt ... “);
+                                  |
+ncvlog: *E,NKDDOT (instruction_set_model.v,218|34): character immediately after a period ('.') does not start an identifier [12.4.1(IEEE)].
+                $display(“Halt ... “);
+                                   |
+ncvlog: *E,NKDDOT (instruction_set_model.v,218|35): character immediately after a period ('.') does not start an identifier [12.4.1(IEEE)].
+                $display(“Halt ... “);
+                                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,218|37): non-printable character (0xe2) ignored.
+                $display(“Halt ... “);
+                                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,218|38): non-printable character (0x80) ignored.
+                $display(“Halt ... “);
+                                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,218|39): non-printable character (0x9c) ignored.
+                $display(“Halt ... “);
+                                        |
+ncvlog: *E,NKDDOT (instruction_set_model.v,218|40): character immediately after a period ('.') does not start an identifier [12.4.1(IEEE)].
+   default : $display (“Error : Illegal Opcode .” );
+                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,221|23): non-printable character (0xe2) ignored.
+   default : $display (“Error : Illegal Opcode .” );
+                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,221|24): non-printable character (0x80) ignored.
+   default : $display (“Error : Illegal Opcode .” );
+                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,221|25): non-printable character (0x9c) ignored.
+   default : $display (“Error : Illegal Opcode .” );
+                                |
+ncvlog: *E,EXPRPA (instruction_set_model.v,221|32): expecting a right parenthesis (')') [10.2.2][14(IEEE)].
+   default : $display (“Error : Illegal Opcode .” );
+                                               |
+ncvlog: *E,MISEXX (instruction_set_model.v,221|47): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+   default : $display (“Error : Illegal Opcode .” );
+                                                  |
+ncvlog: *W,NONPRT (instruction_set_model.v,221|50): non-printable character (0xe2) ignored.
+   default : $display (“Error : Illegal Opcode .” );
+                                                   |
+ncvlog: *W,NONPRT (instruction_set_model.v,221|51): non-printable character (0x80) ignored.
+   default : $display (“Error : Illegal Opcode .” );
+                                                    |
+ncvlog: *W,NONPRT (instruction_set_model.v,221|52): non-printable character (0x9d) ignored.
+   default : $display (“Error : Illegal Opcode .” );
+                                                      |
+ncvlog: *E,NKDDOT (instruction_set_model.v,221|54): character immediately after a period ('.') does not start an identifier [12.4.1(IEEE)].
+   default : $display (“Error : Illegal Opcode .” );
+                                                      |
+ncvlog: *E,MISEXX (instruction_set_model.v,221|54): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+   default : $display (“Error : Illegal Opcode .” );
+                                                       |
+ncvlog: *E,ILLPRI (instruction_set_model.v,221|55): illegal expression primary [4.2(IEEE)].
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+        |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|8): non-printable character (0xe2) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+         |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|9): non-printable character (0x80) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+          |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|10): non-printable character (0x98) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                     |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|21): non-printable character (0xe2) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|22): non-printable character (0x80) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|23): non-printable character (0x98) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|33): non-printable character (0xe2) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                                  |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|34): non-printable character (0x80) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                                   |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|35): non-printable character (0x98) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|45): non-printable character (0xe2) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                                              |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|46): non-printable character (0x80) ignored.
+   if ((‘OPCODE >= ‘ADD) && (‘OPCODE < ‘HLT)) begin
+                                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,231|47): non-printable character (0x98) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+         |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|9): non-printable character (0xe2) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+          |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|10): non-printable character (0x80) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+           |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|11): non-printable character (0x98) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|23): non-printable character (0xe2) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|24): non-printable character (0x80) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|25): non-printable character (0x98) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+                                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|41): non-printable character (0xe2) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+                                          |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|42): non-printable character (0x80) ignored.
+      if(‘DSTTYPE == ‘REGTYPE) RFILE[‘DST] = result ; 
+                                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,232|43): non-printable character (0x98) ignored.
+      else MEM[‘DST] = result ;
+               |
+ncvlog: *W,NONPRT (instruction_set_model.v,233|15): non-printable character (0xe2) ignored.
+      else MEM[‘DST] = result ;
+                |
+ncvlog: *W,NONPRT (instruction_set_model.v,233|16): non-printable character (0x80) ignored.
+      else MEM[‘DST] = result ;
+                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,233|17): non-printable character (0x98) ignored.
+   if (rm == ‘REGTYPE) begin
+             |
+ncvlog: *W,NONPRT (instruction_set_model.v,254|13): non-printable character (0xe2) ignored.
+   if (rm == ‘REGTYPE) begin
+              |
+ncvlog: *W,NONPRT (instruction_set_model.v,254|14): non-printable character (0x80) ignored.
+   if (rm == ‘REGTYPE) begin
+               |
+ncvlog: *W,NONPRT (instruction_set_model.v,254|15): non-printable character (0x98) ignored.
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,257|24): non-printable character (0xe2) ignored.
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,257|25): non-printable character (0x80) ignored.
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                          |
+ncvlog: *W,NONPRT (instruction_set_model.v,257|26): non-printable character (0x9c) ignored.
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                                   |
+ncvlog: *E,ILLPRI (instruction_set_model.v,257|35): illegal expression primary [4.2(IEEE)].
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                                       |
+ncvlog: *E,EXPRPA (instruction_set_model.v,257|39): expecting a right parenthesis (')') [10.2.2][14(IEEE)].
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,257|45): non-printable character (0xe2) ignored.
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                                              |
+ncvlog: *W,NONPRT (instruction_set_model.v,257|46): non-printable character (0x80) ignored.
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,257|47): non-printable character (0x9d) ignored.
+               $display(“REGFILE[%d] = %d\n”,adr1,RFILE[adr1]);
+                                                                   |
+ncvlog: *E,MISEXX (instruction_set_model.v,257|67): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+               adr1 = adr1 +1;
+                  |
+ncvlog: *E,MISEXX (instruction_set_model.v,258|18): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,264|23): non-printable character (0xe2) ignored.
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,264|24): non-printable character (0x80) ignored.
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                         |
+ncvlog: *W,NONPRT (instruction_set_model.v,264|25): non-printable character (0x9c) ignored.
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                              |
+ncvlog: *E,ILLPRI (instruction_set_model.v,264|30): illegal expression primary [4.2(IEEE)].
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                                 |
+ncvlog: *E,EXPRPA (instruction_set_model.v,264|33): expecting a right parenthesis (')') [10.2.2][14(IEEE)].
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                                      |
+ncvlog: *W,NONPRT (instruction_set_model.v,264|38): non-printable character (0xe2) ignored.
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                                       |
+ncvlog: *W,NONPRT (instruction_set_model.v,264|39): non-printable character (0x80) ignored.
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                                        |
+ncvlog: *W,NONPRT (instruction_set_model.v,264|40): non-printable character (0x9d) ignored.
+              $display(“MEM[%d]=%d\n”,adr1,MEM[adr1]);
+                                                          |
+ncvlog: *E,MISEXX (instruction_set_model.v,264|58): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+              adr1= adr1 + 1;
+                 |
+ncvlog: *E,MISEXX (instruction_set_model.v,265|17): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+     $readmemb(“sisc.prog”,MEM);
+               |
+ncvlog: *W,NONPRT (instruction_set_model.v,274|15): non-printable character (0xe2) ignored.
+     $readmemb(“sisc.prog”,MEM);
+                |
+ncvlog: *W,NONPRT (instruction_set_model.v,274|16): non-printable character (0x80) ignored.
+     $readmemb(“sisc.prog”,MEM);
+                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,274|17): non-printable character (0x9c) ignored.
+     $readmemb(“sisc.prog”,MEM);
+                           |
+ncvlog: *W,NONPRT (instruction_set_model.v,274|27): non-printable character (0xe2) ignored.
+     $readmemb(“sisc.prog”,MEM);
+                            |
+ncvlog: *W,NONPRT (instruction_set_model.v,274|28): non-printable character (0x80) ignored.
+     $readmemb(“sisc.prog”,MEM);
+                             |
+ncvlog: *W,NONPRT (instruction_set_model.v,274|29): non-printable character (0x9d) ignored.
+     $monitor(“%d %d %h %h %h”,
+              |
+ncvlog: *W,NONPRT (instruction_set_model.v,275|14): non-printable character (0xe2) ignored.
+     $monitor(“%d %d %h %h %h”,
+               |
+ncvlog: *W,NONPRT (instruction_set_model.v,275|15): non-printable character (0x80) ignored.
+     $monitor(“%d %d %h %h %h”,
+                |
+ncvlog: *W,NONPRT (instruction_set_model.v,275|16): non-printable character (0x9c) ignored.
+     $monitor(“%d %d %h %h %h”,
+                 |
+ncvlog: *E,ILLPRI (instruction_set_model.v,275|17): illegal expression primary [4.2(IEEE)].
+     $monitor(“%d %d %h %h %h”,
+                               |
+ncvlog: *W,NONPRT (instruction_set_model.v,275|31): non-printable character (0xe2) ignored.
+     $monitor(“%d %d %h %h %h”,
+                                |
+ncvlog: *W,NONPRT (instruction_set_model.v,275|32): non-printable character (0x80) ignored.
+     $monitor(“%d %d %h %h %h”,
+                                 |
+ncvlog: *W,NONPRT (instruction_set_model.v,275|33): non-printable character (0x9d) ignored.
+     $time,pc,RFILE[0], RFILE[1]; RFILE[2]) ;
+                                |
+ncvlog: *E,EXPRPA (instruction_set_model.v,276|32): expecting a right parenthesis (')') [10.2.2][14(IEEE)].
+     $time,pc,RFILE[0], RFILE[1]; RFILE[2]) ;
+                                          |
+ncvlog: *E,MISEXX (instruction_set_model.v,276|42): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+     $time,pc,RFILE[0], RFILE[1]; RFILE[2]) ;
+                                            |
+ncvlog: *E,NOTSTT (instruction_set_model.v,276|44): expecting a statement [9(IEEE)].
+	module worklib.instruction_set_model:v
+		errors: 144, warnings: 375
+ncvlog: *F,NOTOPL: no top-level unit found, must have recursive instances.
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).

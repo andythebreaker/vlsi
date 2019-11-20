@@ -69,6 +69,8 @@ integer           i;                    // useful for interactive debugging
 `define ROT      4'b1000
 `define HLT      4'b1001
 
+`define SUB      4'b1010
+`define AND      4'b1011
 // Define Condition Code fields
 `define CARRY  psr[0]
 `define EVEN   psr[1]
@@ -185,6 +187,23 @@ case(`OPCODE)
                   result = src1 + src2;
                   setcondcode(result);
               end
+  `AND :  begin
+                  clearcondcode ;
+                  src1 = getsrc(ir);
+                  src2 = getdst(ir);
+                  result = src1 + src2;
+                  setcondcode(result);
+              end
+
+  `SUB :  begin
+                  clearcondcode ;
+                  src1 = getsrc(ir);
+                  src2 = getdst(ir);
+                  result = src1 - src2;
+                  setcondcode(result);
+              end
+
+
 
     
    
