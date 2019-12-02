@@ -1,0 +1,170 @@
+$date
+	Thu Nov 21 01:18:58 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module instruction_set_model $end
+$var reg 1 ! dir $end
+$var reg 32 " ir [31:0] $end
+$var reg 12 # pc [11:0] $end
+$var reg 5 $ psr [4:0] $end
+$var reg 1 % reset $end
+$var reg 33 & result [32:0] $end
+$var reg 32 ' src1 [31:0] $end
+$var reg 32 ( src2 [31:0] $end
+$var integer 32 ) i [31:0] $end
+$scope function checkcond $end
+$var reg 5 * ccode [4:0] $end
+$var reg 1 + checkcond $end
+$upscope $end
+$scope function getdst $end
+$var reg 32 , getdst [31:0] $end
+$var reg 32 - in [31:0] $end
+$upscope $end
+$scope function getsrc $end
+$var reg 32 . getsrc [31:0] $end
+$var reg 32 / in [31:0] $end
+$upscope $end
+$scope begin main_process $end
+$upscope $end
+$scope begin prog_load $end
+$upscope $end
+$scope task apply_reset $end
+$upscope $end
+$scope task clearcondcode $end
+$upscope $end
+$scope task disprm $end
+$var reg 12 0 adr1 [11:0] $end
+$var reg 12 1 adr2 [11:0] $end
+$var reg 1 2 rm $end
+$upscope $end
+$scope task execute $end
+$upscope $end
+$scope task fetch $end
+$upscope $end
+$scope task setcondcode $end
+$var reg 33 3 res [32:0] $end
+$upscope $end
+$scope task write_result $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 3
+x2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+x+
+bx *
+bx )
+bx (
+bx '
+bx &
+1%
+bx $
+bx #
+bx "
+x!
+$end
+#10
+b0 #
+0%
+#20
+b1 #
+b0 "
+#50
+b10 #
+b101000000000010100000000000000 "
+#60
+b10100 3
+b10 $
+#80
+b11 #
+b100000000000000001000000000001 "
+#90
+b101000000000010100000000000000 3
+b10 $
+#110
+b100 #
+b110000000000000001000000010100 "
+#120
+b10 $
+#140
+b101 #
+b1000000000000000000000000000001 "
+#150
+b101000000000010100000000010100 3
+b101000000000010100000000010100 &
+b101000000000010100000000000000 (
+b101000000000010100000000000000 ,
+b1000000000000000000000000000001 -
+b10100 '
+b10100 .
+b1000000000000000000000000000001 /
+b10 $
+#170
+b110 #
+b1001000000000110010000000000001 "
+#180
+b101000000000010100000001000110 3
+b101000000000010100000001000110 &
+b101000000000010100000000010100 (
+b101000000000010100000000010100 ,
+b1001000000000110010000000000001 -
+b110010 '
+b110010 .
+b1001000000000110010000000000001 /
+b110 $
+#200
+b111 #
+b1011000000000110010000000000001 "
+#210
+b111010000001111101000110110101100 3
+b111010000001111101000110110101100 &
+b101000000000010100000001000110 (
+b101000000000010100000001000110 ,
+b1011000000000110010000000000001 -
+b1011000000000110010000000000001 /
+b10111 $
+#230
+b1000 #
+b1100000000000000011000000000001 "
+#240
+b1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3
+b1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx &
+bx '
+bx .
+b1100000000000000011000000000001 /
+bx0xx1 $
+#260
+b1001 #
+b1110000000000000100000000000001 "
+#270
+bx 3
+bx &
+b0xxxxxxxxxxxx )
+bx (
+bx ,
+b1110000000000000100000000000001 -
+b1110000000000000100000000000001 /
+bx $
+#290
+b1010 #
+b10000000000000000100000000000001 "
+#300
+bx )
+b10000000000000000100000000000001 -
+b10000000000000000100000000000001 /
+bx $
+#320
+b1011 #
+b10010000000000000000000000000000 "
